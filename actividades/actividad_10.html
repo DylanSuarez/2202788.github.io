@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/dectective.ico" type="image/x-icon">
+  <title>Actividades 10</title>
+  <style>
+    html {
+      font-family: sans-serif;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    a[href="#inicio"] {
+      margin-bottom: 1rem;
+      display: block;
+      font-size: 2rem;
+      text-align: center;
+      text-decoration: none;
+    }
+    .fuente {
+      font-size: 2rem;
+    }
+    .menu {
+      margin-bottom: 100vh;
+      font-size: 150%;
+    }
+    .menu li {
+      margin-bottom: 2rem;
+    }
+    .menu li a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      width: 100%;
+      height: 100vh;
+      margin-top: 50vh;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="inicio" >Acividades 10</h1>
+  <ul class="menu">
+    <li><a href="#ac1">Actividad 10-1</a></li>
+    <li><a href="#ac2">Actividad 10-2</a></li>
+    <li><a href="#ac3">Actividad 10-3</a></li>
+    <li><a href="#ac4">Actividad 10-4</a></li>
+    <li><a href="#ac5">Actividad 10-5</a></li>
+    <li><a href="#ac6">Actividad 10-6</a></li>
+    <li><a href="../index.html">Inicio</a></li>
+  </ul>
+
+  <section class="container" id="ac1">
+    <a href="#inicio">🔝</a>
+    <h2>Adding HTML5 Video</h2>
+
+    <video src="./video/puppy.mp4" poster="images/puppy.jpg" width="400" height="400" preload controls loop></video>
+
+    <p>Un video de un cachorro jugando en la nieve</p>
+    <p>
+      En HTML5 no es necesario proporcionar vaores para todos los atributos, como los controles, reproduccion automatica y atributos de blucle utilizandos con el elemento &lt;video&gt;. Estos atributos son como interruptores de encendido/apagado. Si el atributo esta presente, activa esa opcion. Si se omite el atributo, la opcion esta desactivada, si el navegador no admite el emneto &lt;video&gt; de apertura y las etiquetas de &lt;&#47;video&gt; de cierre;
+    </p>
+    <p>
+      <b>preload:</b> Este atributo le indica al navegador que hacer cuando se carga la pagina. Puede tener uno de tres valores: <br>
+      <i><b>none:</b></i> El navegador no debe cargar el video hasta que el usario presiona play. <br>
+      <i><b>auto:</b></i> El navegador debe descargar el video cuando se carga la pagina, <br>
+      <i><b>metadata:</b></i> El navegaro debe simplemente recopilar informacion como el tamaño, el primer fotograma, la lista de pistas y la duracion.
+    </p>
+  </section>
+
+  <section class="container" id="ac2">
+    <a href="#inicio">🔝</a>
+    <h2>Multiple Video Sources</h2>
+
+    <video poster="images/puppy.jpg" width="400" height="320" preload="none" controls loop>
+      <source src="./video/puppy.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+      <source src="./video/puppy.webm" type='video/webm; codecs="av8, vorbis"'>
+    </video>
+
+    <p>Un video de un cachorro jugando en la nieve</p>
+    <p>
+      La etiqueta video: Para especificar la ubicacion del archivo que se reproducira, puede usar el elemento &lt;source&gt; dentro de elemento &lt;video&gt;, (Esto dee reemplezar el atributo src en la etiqueta &lt;video&gt; de apertura.) Tambien puede utilizar varios elementos &lt;source&gt; para especificar que el esta disponible en diferentes formatos. (Debido a un error el ipad, debe proporcionar el video MP4 como el primer formato. De lo contrario, puede que no inicie.)
+    </p>
+    <p>
+      <b>src:</b> Este atributo especifica la runa de acceso al video
+    </p>
+    <p>
+      <b>type:</b> Se debe ulitizar este atributo para decirle al navagador que formato es el video. De lo contrario, descargara parte del video para ver si puede reproducir el archivo (que tomara tiempo y ancho de banda)
+    </p>
+    <p>
+      <b>codecs:</b> El codec que uso para codificar el video se suministra dentro del atributo type. Tenga en cuenta el uso de comillas simples, asi como comillas dobles en el atributo de type, cuando se suministra
+    </p>
+  </section>
+
+  <section class="container" id="ac3">
+    <a href="#inicio">🔝</a>
+    <h2>Adding HTML5 Audio</h2>
+
+    <audio src="./audio/test-audio.ogg" controls autoplay>
+      <p>This browser does not support our audio format.</p>
+    </audio>
+
+    <p>
+      &lt;audio&lt; HTML5 introdujo el elemento &lt;audio&gt; para incluir archivos de audio en sus paginas, Al igual que con el video HTML5, los navegadores esperan diferentes formatos para el audio. El elemento &lt;audio&gt; tiene un numero de atributos que le permiten controlar la reproduccion de audio:
+    </p>
+    <p><b><i>src:</i></b> Este atributo especifica la runta de acceso al archivo de audio</p>
+    <p><b><i>controls:</i></b> Este atributo indica si el reproductor debe mosntrar los controles. Si no utiliza este atributo, no se mostraran los contrloes de forma predeterminada. Tmabien puede especificar sus propios controles mendiante javascript</p>
+    <p><b><i>autoplay:</i></b> La precensia de este atributo indica que el audio debe empezar a reproducirse automatiamente. (Se comside una mejor practica permitir al usario que reprodusca el audio)</p>
+    <p><b><i>loop:</i></b> Este atributo especifica que las pista de audio debe reproducirse de nuevo una ves que haya finalizado</p>
+  </section>
+
+  <section class="container" id="ac4">
+    <a href="#inicio">🔝</a>
+    <h2>Multiple Audio Source</h2>
+
+    <audio controls autoplay>
+      <source src="./audio/test-audio.ogg">
+      <source src="./audio/test-audio.mp3">
+      <p>This browser does not support our audio format.</p>
+    </audio>
+
+    <P>
+      <b><i>src:</i></b> El elemento &lt;soruce&gt; utiliza el atributo <i>src</i> para indicar donde se encutrna el archivo de audio, tipo en el momento de escribir, el atributo de tipo no se usaba habitualmente en el elemtno &lt;souce&gt; de la mismta manera que lo era para el elemento &lt;video&gt;.
+    </P>
+  </section>
+
+  <section class="container" id="ac5">
+    <a href="#inicio">🔝</a>
+    <h2>HTML Youtube Videos</h2>
+
+    <iframe width="600" height="350" src="https://www.youtube.com/embed/MfrC8PAQtlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+    <p>
+      Youtube video ID, youtube mostrara un ID (Como EF81pb5IWou), al guardar (o reproducir) un video. Puede utilizar este ID y hacer referencia a su video en el codigo HTML.
+    </p>
+    <p>
+      <b><i>Reproducion de un video de youtube en HTML:</i></b><br>
+      <ul>
+        <li>Sube el vidio a youtube</li>
+        <li>Anota el ID del vidio</li>
+        <li>Defina el elemento &lt;iframe&gt; en su pagina web</li>
+        <li>Deje que el atributo src apunte a la URL del video</li>
+        <li>Utilice los atributos widht y height para especificar la dimension del reproductor</li>
+      </ul>
+    </p>
+
+  </section>
+
+  <section class="container" id="ac6">
+    <a href="#inicio">🔝</a>
+    <h2>Flash, Video and Audio</h2>
+
+    <video poster="./images/puppy.jpg" width="400" height="320" controls="controls">
+      <source src="./video/puppy.mp4" type="vido/mp4; codecs='avc1.42E01E, mp1a.40.2'">
+      <source src="./video/puppy.webm" type="vido/webm; codecs='vp8, vorbis'">
+      <div class="snow">
+        <p>
+          You cannot see this video of a puppy playing in the snow becouse this browser does nor support our video formts
+        </p>
+      </div>
+    </video>
+    <hr>
+    <iframe width="600" height="350" src="https://www.youtube.com/embed/MfrC8PAQtlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+  </section>
+  
+</body>
+</html>

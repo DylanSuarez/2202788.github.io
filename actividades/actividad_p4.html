@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/dectective.ico" type="image/x-icon">
+  <title>Actividad Personalizada 4</title>
+  <style>
+    td {
+      border: 1px solid #ccc;
+    }
+    td {
+      width: 70px;
+      height: 70px;
+    }
+
+    #grid {
+      width: 1200px;
+      height: 90vh;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 16px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 60px  60px repeat(2, 1fr) 60px;
+      grid-template-areas: 
+      "header header header header"
+      "nav nav nav nav"
+      "aside content-left content-middle content-right"
+      "aside content-low content-low content-low"
+      "footer footer footer footer";
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    #header {
+      grid-area: header;
+      background-color: #ffe553;
+    }
+
+    #nav {
+      grid-area: nav;
+      background-color: #31bfb7;
+    }
+
+    #aside {
+      grid-area: aside;
+      background-color: #b2ee58;
+    }
+
+    #content-left {
+      grid-area: content-left;
+      background-color: #f1612c;
+    }
+
+    #content-middle {
+      grid-area: content-middle;
+      background-color: #87ceeb;
+    }
+
+    #content-right {
+      grid-area: content-right;
+      background-color: #328da8;
+    }
+    
+    #content-low {
+      grid-area: content-low;
+      background-color: #7b67eb;
+    }
+
+    #footer {
+      grid-area: footer;
+      background-color: #47ecad;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Actividad Personalizada 4</h1>
+  <table style="width: 1200px; height: 500px; font-size: 24px; margin-bottom: 6rem;" align="center">
+    <caption style="font-size: 32px; font-weight: bold;">Tabla Periódica De Los Elemtos</caption>
+
+    <tr>
+      <td bgcolor="#a932cd">H</td>
+      <td style="border: none;"></td>
+      <td rowspan="3" colspan="10" style="border: none;"><img src="./images/table.png" width="100%"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td bgcolor="#05d2e0">He</td>
+    </tr>
+
+    <tr>
+      <td bgcolor="#fd9d7a">Li</td>
+      <td bgcolor="#ffec97">Be</td>
+      <td bgcolor="#6dfa80">B</td>
+      <td bgcolor="#a932cd">C</td>
+      <td bgcolor="#a932cd">N</td>
+      <td bgcolor="#a932cd">O</td>
+      <td bgcolor="#ec2bf3">F</td>
+      <td bgcolor="#05d2e0">Ne</td>
+    </tr>
+
+    <tr>
+      <td bgcolor="#fd9d7a">Na</td>
+      <td bgcolor="#ffec97">Mg</td>
+      <td bgcolor="#fde665">Al</td>
+      <td bgcolor="#6dfa80">Si</td>
+      <td bgcolor="#a932cd">P</td>
+      <td bgcolor="#a932cd">S</td>
+      <td bgcolor="#ec2bf3">Cl</td>
+      <td bgcolor="#05d2e0">Ar</td>
+    </tr>
+
+    <tr>
+      <td bgcolor="#fd9d7a">K</td>
+      <td bgcolor="#ffec97">Ca</td>
+      <td bgcolor="#f0ff9c">Sc</td>
+      <td bgcolor="#f0ff9c">Ti</td>
+      <td bgcolor="#f0ff9c">V</td>
+      <td bgcolor="#f0ff9c">Cr</td>
+      <td bgcolor="#f0ff9c">Mn</td>
+      <td bgcolor="#f0ff9c">Fe</td>
+      <td bgcolor="#f0ff9c">Co</td>
+      <td bgcolor="#f0ff9c">Ni</td>
+      <td bgcolor="#f0ff9c">Cu</td>
+      <td bgcolor="#f0ff9c">Zn</td>
+      <td bgcolor="#fde665">Ga</td>
+      <td bgcolor="#6dfa80">Ge</td>
+      <td bgcolor="#6dfa80">As</td>
+      <td bgcolor="#a932cd">Se</td>
+      <td bgcolor="#ec2bf3">Br</td>
+      <td bgcolor="#05d2e0">Kr</td>
+    </tr>
+
+    <tr>
+      <td bgcolor="#fd9d7a">Rb</td>
+      <td bgcolor="#ffec97">Sr</td>
+      <td bgcolor="#f0ff9c">Y</td>
+      <td bgcolor="#f0ff9c">Zr</td>
+      <td bgcolor="#f0ff9c">Nb</td>
+      <td bgcolor="#f0ff9c">Mo</td>
+      <td bgcolor="#f0ff9c">Tc</td>
+      <td bgcolor="#f0ff9c">Ru</td>
+      <td bgcolor="#f0ff9c">Rh</td>
+      <td bgcolor="#f0ff9c">Pd</td>
+      <td bgcolor="#f0ff9c">Ag</td>
+      <td bgcolor="#f0ff9c">Cd</td>
+      <td bgcolor="#fde665">In</td>
+      <td bgcolor="#fde665">Sn</td>
+      <td bgcolor="#6dfa80">Sb</td>
+      <td bgcolor="#6dfa80">Te</td>
+      <td bgcolor="#ec2bf3">I</td>
+      <td bgcolor="#05d2e0">Xe</td>
+    </tr>
+
+    <tr>
+      <td bgcolor="#fd9d7a">Cs</td>
+      <td bgcolor="#ffec97">Ba</td>
+      <td bgcolor="#f0ff9c">Lu</td>
+      <td bgcolor="#f0ff9c">Hf</td>
+      <td bgcolor="#f0ff9c">Ta</td>
+      <td bgcolor="#f0ff9c">W</td>
+      <td bgcolor="#f0ff9c">Re</td>
+      <td bgcolor="#f0ff9c">Os</td>
+      <td bgcolor="#f0ff9c">Ir</td>
+      <td bgcolor="#f0ff9c">Pt</td>
+      <td bgcolor="#f0ff9c">Au</td>
+      <td bgcolor="#f0ff9c">Hg</td>
+      <td bgcolor="#fde665">Tl</td>
+      <td bgcolor="#fde665">Pb</td>
+      <td bgcolor="#fde665">Bi</td>
+      <td bgcolor="#6dfa80">Po</td>
+      <td bgcolor="#ec2bf3">At</td>
+      <td bgcolor="#05d2e0">Rn</td>
+    </tr>
+
+    <tr>
+      <td bgcolor="#fd9d7a">Fr</td>
+      <td bgcolor="#ffec97">Ra</td>
+      <td bgcolor="#f0ff9c">Lr</td>
+      <td bgcolor="#f0ff9c">Rf</td>
+      <td bgcolor="#f0ff9c">Db</td>
+      <td bgcolor="#f0ff9c">Sg</td>
+      <td bgcolor="#f0ff9c">Bh</td>
+      <td bgcolor="#f0ff9c">Hs</td>
+      <td bgcolor="#f0ff9c">Mt</td>
+      <td bgcolor="#f0ff9c">Ds</td>
+      <td bgcolor="#f0ff9c">Rg</td>
+      <td bgcolor="#f0ff9c">Cn</td>
+      <td bgcolor="#fde665">Nh</td>
+      <td bgcolor="#fde665">Fl</td>
+      <td bgcolor="#fde665">Mc</td>
+      <td bgcolor="#fde665">Lv</td>
+      <td bgcolor="#ec2bf3">Ts</td>
+      <td bgcolor="#05d2e0">Og</td>
+    </tr>
+
+    <tr>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+    </tr>
+
+    <tr>
+      <td rowspan="2" colspan="4"><img src="./images/bloque.png" width="100%"></td>
+      <td bgcolor="#96ffa4">La</td>
+      <td bgcolor="#96ffa4">Ce</td>
+      <td bgcolor="#96ffa4">Pr</td>
+      <td bgcolor="#96ffa4">Nd</td>
+      <td bgcolor="#96ffa4">Pm</td>
+      <td bgcolor="#96ffa4">Sm</td>
+      <td bgcolor="#96ffa4">Eu</td>
+      <td bgcolor="#96ffa4">Gd</td>
+      <td bgcolor="#96ffa4">Tb</td>
+      <td bgcolor="#96ffa4">Dy</td>
+      <td bgcolor="#96ffa4">Ho</td>
+      <td bgcolor="#96ffa4">Er</td>
+      <td bgcolor="#96ffa4">Tm</td>
+      <td bgcolor="#96ffa4">Yb</td>
+    </tr>
+
+    <tr>
+      <td bgcolor="#b6fabf">Ac</td>
+      <td bgcolor="#b6fabf">Th</td>
+      <td bgcolor="#b6fabf">Pa</td>
+      <td bgcolor="#b6fabf">U</td>
+      <td bgcolor="#b6fabf">Np</td>
+      <td bgcolor="#b6fabf">Pu</td>
+      <td bgcolor="#b6fabf">Am</td>
+      <td bgcolor="#b6fabf">Cm</td>
+      <td bgcolor="#b6fabf">Bk</td>
+      <td bgcolor="#b6fabf">Cf</td>
+      <td bgcolor="#b6fabf">Es</td>
+      <td bgcolor="#b6fabf">Fm</td>
+      <td bgcolor="#b6fabf">Md</td>
+      <td bgcolor="#b6fabf">No</td>
+    </tr>
+  </table>
+
+  <h2 style="text-align: center; font-size: 2rem;">Estructura Basica De Una Pagina Web</h2>
+  <div class="maps" id="grid">
+    <div class="item" id="header">Header</div>
+    <div class="item" id="nav">Nav</div>
+    <div class="item" id="aside">Aside</div>
+    <div class="item" id="content-left">Content-left</div>
+    <div class="item" id="content-middle">Content-middle</div>
+    <div class="item" id="content-right">Content-right</div>
+    <div class="item" id="content-low">Content-low</div>
+    <div class="item" id="footer">Footer</div>
+  </div>
+</body>
+</html>

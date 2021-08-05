@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/dectective.ico" type="image/x-icon">
+  <title>Actividad 8</title>
+  <style>
+    html
+    {
+      font-family: sans-serif;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    a[href="#inicio"]
+    {
+      margin-bottom: 1rem;
+      display: block;
+      font-size: 2rem;
+      text-align: center;
+      text-decoration: none;
+    }
+    .fuente
+    {
+      font-size: 2rem;
+    }
+    .menu
+    {
+      margin-bottom: 100vh;
+      font-size: 150%;
+    }
+    .menu li
+    {
+      margin-bottom: 2rem;
+    }
+    .menu li a
+    {
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container
+    {
+      width: 100%;
+      height: 100vh;
+      margin-top: 50vh;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="inicio" >Acividades 8</h1>
+  <ul class="menu">
+    <li><a href="#ac1">Actividad 8-1</a></li>
+    <li><a href="#ac2">Actividad 8-2</a></li>
+    <li><a href="#ac3">Actividad 8-3</a></li>
+    <li><a href="#ac4">Actividad 8-4</a></li>
+    <li><a href="#ac5">Actividad 8-5</a></li>
+    <li><a href="#ac6">Actividad 8-6</a></li>
+    <li><a href="#ac7">Actividad 8-7</a></li>
+    <li><a href="../index.html">Inicio</a></li>
+  </ul>
+
+  <section class="container" id="ac1">
+    <a href="#inicio">🔝</a>
+    <h2>Estructura Basica De Una Tabla </h2>
+    <table>
+      <tr>
+        <td>15</td>
+        <td>15</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>45</td>
+        <td>60</td>
+        <td>45</td>
+      </tr>
+      <tr>
+        <td>60</td>
+        <td>90</td>
+        <td>90</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="container" id="ac2">
+    <a href="#inicio">🔝</a>
+    <h2>Table Headings</h2>
+    <table>
+      <tr>
+        <th></th>
+        <th scope="col">Sabado</th>
+        <th scope="col">Domingo</th>
+      </tr>
+      <tr>
+        <th scope="row">Boletas Vendidas:</th>
+        <td>120</td>
+        <td>135</td>
+      </tr>
+      <tr>
+        <th scope="row">Total ventas:</th>
+        <td>$600</td>
+        <td>$675</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="container" id="ac3">
+    <a href="#inicio">🔝</a>
+    <h2>Spanning Columns</h2>
+
+    <table border="1">
+      <caption>Ejemplo de Aliniacion y Dimensionados en Columnas</caption>
+      <tr>
+        <th></th>
+        <th>09am</th>
+        <th>10am</th>
+        <th>11am</th>
+        <th>12am</th>
+      </tr>
+      <tr>
+        <th>Lunes</th>
+        <td colspan="2">Geografia</td>
+        <td>Matematicas</td>
+        <td>Arte</td>
+      </tr>
+      <tr>
+        <th>Martes</th>
+        <td colspan="3">Tecnico Prog. Soft</td>
+        <td>Etica</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="container" id="ac4">
+    <a href="#inicio">🔝</a>
+    <h2>Spanning Rows</h2>
+    <table border="2">
+      <caption>Ejemplo de Alineacion y Dimesionados en Filas</caption>
+      <tr>
+        <th></th>
+        <th>Canal 1</th>
+        <th>Caracol</th>
+        <th>Señal Colombia</th>
+      </tr>
+      <tr>
+        <th>6pm - 7pm</th>
+        <td rowspan="2">Noticas</td>
+        <td>Concurso</td>
+        <td>Serie</td>
+      </tr>
+      <tr>
+        <th>7pm - 8pm</th>
+        <td>Novela</td>
+        <td>Documental</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="container" id="ac5">
+    <a href="#inicio">🔝</a>
+    <h2>Long Tables</h2>
+
+    <table border="3">
+      <caption>Ejemplo de Tablas Largas</caption>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Ingresos</th>
+          <th>Gastos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>01 Marzo</th>
+          <td>25000</td>
+          <td>3600</td>
+        </tr>
+        <tr>
+          <th>02 Marzo</th>
+          <td>28500</td>
+          <td>4800</td>
+        </tr>
+        <tr>
+          <th>03 Marzo</th>
+          <td>26000</td>
+          <td>4200</td>
+        </tr>
+        <tr>
+          <th>04 Marzo</th>
+          <td>29000</td>
+          <td>3800</td>
+        </tr>
+        <tr>
+          <th>05 Marzo</th>
+          <td>310000</td>
+          <td>1150</td>
+        </tr>
+        <tr>
+          <th>06 Marzo</th>
+          <td>16800</td>
+          <td>1400</td>
+        </tr>
+        <tr>
+          <th>07 Marzo</th>
+          <td>22600</td>
+          <td>2000</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>178900</td>
+          <td>20950</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="container" id="ac6">
+    <a href="#inicio">🔝</a>
+    <h2>Width and Spacing</h2>
+
+    <table width="400px" cellpadding="10px" cellspacing="5px" border="1">
+      <caption align="right">Ejemplo de Espaciado</caption>
+      <tr>
+        <th widht="150px"></th>
+        <th>Retirado</th>
+        <th>Credito</th>
+        <th widht="150px">Balance</th>
+      </tr>
+      <tr>
+        <th>Enero</th>
+        <td>250.00</td>
+        <td>660.50</td>
+        <td>410.50</td>
+      </tr>
+      <tr>
+        <th>Febrero</th>
+        <td>135.55</td>
+        <td>895.20</td>
+        <td>1170.15</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="container" id="ac7">
+    <a href="#inicio">🔝</a>
+    <h2>Trabajando con tablas</h2>
+
+    <table width="500px" cellpadding="5px" cellspacing="5px" border="2" bgcolor="#ffcfb9">
+      <caption>Ejemplo de Cuadrados</caption>
+      <tr>
+        <td align="right" valign="middle" bgcolor="tea">Teal</td>
+        <td align="left" bgcolor="fuchsia">Fucsia</td>
+        <td colspan="2" rowspan="2" align="center" bgcolor="#dadada">
+          <img src="../pdf/08_tema_img/images/explorer.jpg" width="32px" height="32px" border="1" aling="middle">
+        </td>
+      </tr>
+      <tr>
+        <td align="right" bgcolor="yellow">Amarillo</td>
+        <td align="center" bgcolor="gray">Gris</td>
+      </tr>
+      <tr>
+        <td colspan="2" rowspan="2" align="center" bgcolor="white">
+          <img src="../pdf/08_tema_img/images/LogoSena.jpg" width="32px" height="32px" aling="middle">
+        </td>
+        <td align="right" valign="baseline" bgcolor="navy">
+          <font color="white">Azul</font>
+        </td>
+        <td align="center">#ffcfb9</td>
+      </tr>
+      <tr>
+        <td width="140px" align="center" bgcolor="silver">Plata</td>
+        <td width="140px" align="center" valign="middle" bgcolor="aquamarine">AguaMarina</td>
+      </tr>
+    </table>
+  </section>
+
+</body>
+</html>

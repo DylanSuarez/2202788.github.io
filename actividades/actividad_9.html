@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/dectective.ico" type="image/x-icon">
+  <title>Actividad 9</title>
+  <style>
+    html {
+      font-family: sans-serif;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    a[href="#inicio"] {
+      margin-bottom: 1rem;
+      display: block;
+      font-size: 2rem;
+      text-align: center;
+      text-decoration: none;
+    }
+    .fuente {
+      font-size: 2rem;
+    }
+    .menu {
+      margin-bottom: 100vh;
+      font-size: 150%;
+    }
+    .menu li {
+      margin-bottom: 2rem;
+    }
+    .menu li a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      width: 100%;
+      height: 100vh;
+      margin-top: 50vh;
+    }
+  </style>
+  <style type="text/css">
+    p#pullquote {
+      text-transform: uppercase;
+    }
+
+
+    .important {
+      text-transform: uppercase;
+    }
+    .admittance {
+      color: #ff6666;
+    }
+
+    .gallery {
+      text-transform: uppercase;
+      color: #2449c6;
+    }
+    #pheader {
+      color: #ff6666;
+    }
+    #pfooter {
+      color: #72d27c;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="inicio" >Acividades 9</h1>
+  <ul class="menu">
+    <li><a href="#ac1">Actividad 9-1</a></li>
+    <li><a href="#ac2">Actividad 9-2</a></li>
+    <li><a href="#ac3">Actividad 9-3</a></li>
+    <li><a href="#ac4">Actividad 9-4</a></li>
+    <li><a href="#ac5">Actividad 9-5</a></li>
+    <li><a href="#ac6">Actividad 9-6</a></li>
+    <li><a href="../index.html">Inicio</a></li>
+  </ul>
+
+  <section class="container" id="ac1">
+    <a href="#inicio">🔝</a>
+    <h2>ID Attribute</h2>
+    <p>Cada elemeto HTML puede llevar el atributo id. Se utiliza para identificar de forma unica ese elemeto de otors elemetos de la pagina. Su valor debe comenzar con una letra o un guion bajo (no un numero o cualquier otro caracter). Es importante que hay dos elementos en la misma pagina tienen el mismo valor para sus atributos ID (de lo contrario, el valor ya no es unico)</p>
+    <p id="pullquote">Dar a un elemento una identidad unica le permite darle un estilo diferente que cualquier otra instancia del mismo elemeto en la pagina.</p>
+    <p>Por ejemplo. es posible que desee asginar un parrafo dentro de la pagina (quizas un parrafo que contiene un cotizacion de extraccion) un estilo diferente que todos los demas parrafos. En ejemplo, el parrafo con el atributo ID cuyo valor es pullquote se hace mayuscuñar usando CSS</p>
+  </section>
+
+  <section class="container" id="ac2">
+    <a href="#inicio">🔝</a>
+    <h2>Class Attribute</h2>
+    <p class="important">
+      Cada elemento HTML tambien puede llevar un atributo de clase, Aveces, es lugar de indentificar de forma unica un elemento dentro del documento, deseea una manera de indentificar varios elementos como diferentes de los elementos de la pagina. por ejemplo. es posible que tenga algunos parrafos de texto que contengan infomacion que sea mas imporanten que otros y desee distiguir estos elementos, o puede que deseea diferenciar entre vinculos que apuntan a otras paginas de su propio sitio y vilculos importantes tamien se podria usar en encabezados y vinculos que apuntan a sitios externos.
+    </p>
+    <p>
+      Para ello, puede utilizar el atributo de lcase. Su valor debe describir la clase a la que pertenece. En el ejemplo de la izquierda, los parrafos clave tienen un atributo de lcase cuyo valor es importante, El atributo de lcase en cualquoer elemento puede compartir el mismo valor por lo tanto, en este ejemplo, el valor es importante tambien se podria usar encabezados y vinculos.
+    </p>
+    <p class="important admittance">
+      De forma predeterminada, el uso de estos atributos no afecta a la presentacion de un elemento. Solo cambiara su apariencia si hay una regla CSS que indica que debe mostrarse de manera diferente, En este ejemplo, el CSS se ha aplicado para hacer los elementos con un atributo de lcase cuyo valor es la admision roja, Si desea indicar que un elemento pertenece a varias clases, puede separa los nombres de ñcase con un espacio. 
+    </p>
+  </section>
+
+  <section class="container" id="ac3">
+    <a href="#inicio">🔝</a>
+    <h2>Grouping Blok Elemnts</h2>
+    <div id="pheader">
+      <p>
+        El elemento &lt;div&lt; permite agrupar un conjunto de lelemtos juntos en un cuadrado nivel de bloque. Por ejemplo: puede crear elementos &lt;div&lt; para que contega todos los elementos del encabezado del sitio (el logotipo y navegacion), o puede crear un elemento &lt;div&lt; para que contenga infomacion.
+      </p>
+    </div>
+
+    <div id="pbody">
+      <p>
+        En un navegador, el contenido del elemento &lt;div&lt; comenzara en una linea, pero aparte de esto no habra ninguna difenrecia en la presentacion de la pagina. <span class="gallery">Sin embargo, el uso de un atributo ID o class en el elemento &lt;div&lt; significa que puede crear reglas de estilos CSS para indicar cuanto espacio debe ocupar el elemento &lt;div&lt; en la pantalla y cambiar la apariencia de todos los elementos contenidos en el.</span>Tambien puede facilitar el seguimiento del codigo si ha utilizado elementos &lt;div&lt; para contener cada seccion de la pagina.
+      </p>
+    </div>
+
+    <div id="pfooter">
+      <p>
+        Dado que puede haber varios otros elementos dentro un elemento &lt;div&lt;, puede ser util agregar un comentario despues de la etiqueta &lt;&#47;div&lt; de cierre. Esto le permite ver claramente a que la etiqueta de apertura es supone que conrresponde. 
+      </p>
+    </div>
+  </section>
+
+  <section class="container" id="ac4">
+    <a href="#inicio">🔝</a>
+    <h2>Frames</h2>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11705547.84663021!2d-17.114239098067735!3d44.2523635484516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!5e0!3m2!1ses-419!2sco!4v1627609414699!5m2!1ses-419!2sco" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" output="embed">
+    </iframe>
+    <p>
+      Un iFrame es como pequeña ventana que se ha cortado en tu pagina, y en esa ventana puedes ver otras paginas. El termino iframe es una abrebiatura de marco alineado. Un uso comun de iframes (que puede haber visto en varios sitios web) es incrustar un mapa de Google en una pagina. El conteniddo del iframe puede ser cualquier pagina HTML (Ya sea el mismo servidor o en cualquier otro lugar en la web.) Se crea iframe mediante el elemento &lt;iframe&lt;. Hay algunos atributos que necesitaras saber para usarlo:
+    </p>
+    <p>
+      <b>src:</b> el atributo <i>src</i> especifica la direccion URL de la pagina que se mostrara en el iframe.
+    </p>
+    <p>
+      <b>widht</b> El atributo <i>widht</i> especifica la altura de iframe en pixeles.
+    </p>
+    <p>
+      <b>height</b> El atributo <i>height</i> especifica la ancho de iframe en pixeles.
+    </p>
+  </section>
+
+  <section class="container" id="ac5">
+    <a href="#inicio">🔝</a>
+    <h2>Information Abot Your Pages - meta</h2>
+    <!-- <meta name="decription" content="Es es mi home page personal">
+    <meta name="keywords" content="infomacion, persoal, blog">
+    <meta name="robots" content="nofollow">
+    <meta http-equiv="author" content="Jesus Rubio">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="Martes, 30 Jul 2019 23:59:59 GMT"> -->
+
+    <p>Por favor, vea el origen de esta página para examinar los metadatos.</p><hr/>
+    <p>El elemento &lt;metas&lt; reside dentro del elemento &lt;head&lt; y contiene
+    información sobre esa página web. No es visible para los usuarios, pero cumple
+    una serie de propósitos, como decir a los motores de búsqueda acerca de su
+    página, quién lo creó, y si es o no es sensible al tiempo. (Si la página es
+    sensible al tiempo, se puede establecer para expirar.)
+
+    El elemento a &lt;meta&lt; es un elemento vacío, por lo que no tiene una etiqueta
+    de cierre. Utiliza atributos para llevar la información.
+
+    Los atributos más comunes son el nombre y los atributos de contenido,
+
+    que tienden a usarse juntos. Estos atributos especifican las propiedades de
+
+    toda la página. El valor del atributo name es la propiedad que está
+    estableciendo y el valor del atributo content es el valor que desea
+
+    dar a esta propiedad.</p>
+
+    <p><b>description:</b> contiene una descripción de la página. Esta descripción
+    es comúnmente utilizada por los motores de búsqueda para entender de qué se trata
+    la página y debe ser un máximo de 155 caracteres. A veces también se muestra en
+    los resultados del motor de búsqueda.</p>
+
+    <p><b>keywords:</b> contiene una lista de palabras separadas por comas en las que
+    un usuario puede usar para buscar la página. En la práctica, esto ya no tiene
+    ningún efecto notable sobre cómo los motores de búsqueda indexan su sitio.</p>
+    <p><b>robots:</b> esto indica si los motores de búsqueda deben agregar esta página
+    a sus resultados de búsqueda o no. Se puede usar un valor de noindex si no se debe
+    agregar esta página. Un valor de nofollow se puede utilizar si los motores de
+    búsqueda deben agregar esta página en sus resultados, pero no las páginas a las
+    que enlaza.</p>
+
+    <p><b>author:</b> define el autor de la Página Web.</p>
+
+    <p><b>pragma:</b> esto impide que el explorador almacenar en caché la página.
+
+    (Es decir, almacenarlo localmente para ahorrar tiempo descargarlo en visitas
+    subsiguientes.) .</p>
+
+    <p><b>expires:</b> expira porque los exploradores suelen almacenar en caché el
+    contenido de una página, la opción Expires se puede usar para indicar cuándo
+    debe expirar la página (y ya no se almacena en caché). Tenga en cuenta que la
+    fecha debe especificarse en el formato que se muestra.</p>
+  </section>
+  
+  <section class="container" id="ac6">
+    <a href="#inicio">🔝</a>
+    <h2>IED Colegio Gonzalo Arango - Home Page</h2>
+    <!-- <meta name="drescription" content="IED, Gonzalo, Arango, colegio, distrital, COLOMBIA"> -->
+
+    <div id="header">
+      <h2>IED Colegio Gonzalo Arango</h2>
+      <ul>
+        <li><a href="https://www.redacademica.edu.co/colegios/colegio-gonzalo-arango-ied" target="_blank">Home page</a></li>
+        <li><a href="https://www.gonzaloarango.com/index.html" target="_blank">Quien es Gonzalo Arango</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <p>Calle 130A N 98-71, Bogota, Colombia</p>
+      <p><span class="contact">Telefono</span> +57 1 685 76 74</p>
+      <p><span class="contact">Email </span><a href="mailto:colgonzaloarango@redp.edu.co">colgonzaloarango@redp.edu.co</a></p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31811.07695182305!2d-74.12762960111142!3d4.7030635358996475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8547f94ea9b3%3A0x9b30751148637f53!2sIED%20Gonzalo%20Arango!5e0!3m2!1ses-419!2sco!4v1627610637374!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <p>&copy; <i>IED Colegio Gonzalo Arango</i></p>
+  </section>
+
+</body>
+</html>
