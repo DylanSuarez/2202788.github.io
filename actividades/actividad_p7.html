@@ -7,15 +7,6 @@
   <link rel="shortcut icon" href="./images/dectective.ico" type="image/x-icon">
   <title>Actividad Personalizada 7</title>
   <style>
-    @keyframes bounce {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(var(--bounce-height));
-    }
-    }
-
     body {
       height: 100vh;
       display: flex;
@@ -35,57 +26,66 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-weight: bold;
       box-shadow: 2px 2px 16px #ccc;
     }
+    .box a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 18px;
+      font-family: sans-serif;
+    }
 
-    /* 
-      If you're not seeing the boxes bounce, you 
-      might have "reduce motion" selected in your OS! 
-    */
-    @media (prefers-reduced-motion: no-preference) {
-      .box {
-        animation: 
-          bounce var(--animation-duration)
-          infinite alternate
-          cubic-bezier(.2, .65, .6, 1);
+    .box {
+      animation: 
+      bounce var(--animation-duration)
+      infinite alternate
+      cubic-bezier(.2, .65, .6, 1);
+    }
+
+    @keyframes bounce {
+      from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(var(--bounce-height));
       }
     }
 
     .box.one {
-      --bg: slateblue;
+      --bg: #6a5acd;
       --bounce-height: -20px;
-      --animation-duration: 200ms;
+      --animation-duration: 300ms;
     }
     .box.two {
       --bounce-height: -30px;
-      --animation-duration: 300ms;
-      --bg: deeppink;
+      --animation-duration: 400ms;
+      --bg: #ff1493;
     }
     .box.three {
       --bounce-height: -40px;
-      --animation-duration: 400ms;
-      --bg: dodgerblue;
+      --animation-duration: 500ms;
+      --bg: #1e90ff;
     }
     .box.for {
-      --bounce-height: -40px;
-      --animation-duration: 300ms;
-      --bg: rgb(255, 221, 30);
+      --bounce-height: -30px;
+      --animation-duration: 400ms;
+      --bg: #ffdd1e;
     }
     .box.five {
-      --bounce-height: -40px;
-      --animation-duration: 200ms;
-      --bg: rgb(30, 255, 124);
+      --bounce-height: -20px;
+      --animation-duration: 300ms;
+      --bg: #1eff7c;
     }
   </style>
 </head>
 <body>
   <!-- <h1 style="text-align: center;">Actividad Personalizada 7</h1> -->
 
-  <div class="box one">D</div>
-  <div class="box two">Y</div>
-  <div class="box three">L</div>
-  <div class="box for">A</div>
-  <div class="box five">N</div>
+  <div class="box one"><a href="../index.html">D</a></div>
+  <div class="box two"><a href="../index.html">Y</a></div>
+  <div class="box three"><a href="../index.html">L</a></div>
+  <div class="box for"><a href="../index.html">A</a></div>
+  <div class="box five"><a href="../index.html">N</a></div>
 </body>
 </html>
