@@ -24,14 +24,15 @@
     }
     .container {
       width: 1200px;
+      height: calc(100vh - 80px);
       margin: auto;
       text-align: center;
       display: flex;
       flex-wrap: wrap;
     }
     .box {
-      width: calc(1200px / 6);
-      height: 200px;
+      width: calc(1200px / 7);
+      height: 171px;
       background-color: var(--bg);
       border-radius: 50%;
       display: flex;
@@ -86,18 +87,24 @@
       --animation-duration: 2s;
       --bg: #ff961e;
     }
+    .box.seven {
+      --initial: 1.7s;
+      --animation-duration: 2s;
+      --bg: #da1eff;
+    }
   </style>
 </head>
 <body>
   <h1>Actividad Personalizada 7</h1>
 
   <div class="container">
-    <a class="box one" href="../index.html">I</a>
-    <a class="box two" href="../index.html">N</a>
-    <a class="box three" href="../index.html">I</a>
+    <a class="box one" href="../index.html">W</a>
+    <a class="box two" href="../index.html">E</a>
+    <a class="box three" href="../index.html">L</a>
     <a class="box for" href="../index.html">C</a>
-    <a class="box five" href="../index.html">I</a>
-    <a class="box six" href="../index.html">O</a>
+    <a class="box five" href="../index.html">O</a>
+    <a class="box six" href="../index.html">M</a>
+    <a class="box seven" href="../index.html">E</a>
   </div>
 </body>
 </html>
