@@ -20,15 +20,21 @@
       margin: 0;
     }
     h1 {
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1200px;
+      height: 4rem;
+      margin: 0 auto;
+      box-shadow: inset 2px 2px 1px #ccc, inset -2px -2px 1px #ccc, 2px 2px 16px #ccc;
     }
     .container {
       width: 1200px;
-      height: calc(100vh - 80px);
-      margin: auto;
-      text-align: center;
+      height: calc(100vh - 4rem);
+      margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
+      box-shadow: inset 2px 2px 1px #ccc, inset -2px -2px 1px #ccc, 2px 2px 16px #ccc;
     }
     .box {
       width: calc(1200px / 7);
@@ -42,6 +48,7 @@
       font-size: 24px;
       font-weight: bold;
       box-shadow: 4px 4px 16px #ccc;
+      border: 3px solid #000;
       color: #000;
       font-family: sans-serif;
       animation: dowm infinite alternate var(--animation-duration) ease-in-out var(--initial);
@@ -52,7 +59,7 @@
         transform: translateY(0);
       }
       to {
-        transform: translateY(calc(100vh - 80px - 200px));
+        transform: translateY(calc(100vh - 4rem - 171px));
       }
     }
     .box.one {
@@ -95,7 +102,7 @@
   </style>
 </head>
 <body>
-  <h1>Actividad Personalizada 7</h1>
+  <h1>Clic en los circulos para regresar</h1>
 
   <div class="container">
     <a class="box one" href="../index.html">W</a>
