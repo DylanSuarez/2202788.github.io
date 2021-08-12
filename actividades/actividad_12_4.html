@@ -5,9 +5,78 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="images/dectective.ico" type="image/x-icon">
-  <title>Document</title>
+  <title>Understanding Color - 2</title>
+  <style>
+    body {
+      background-color: rgb(200, 200, 200);
+      color: white;
+      padding: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h1 {
+      background-color: darkcyan;
+      padding: inherit;
+    }
+    .myTable {
+      background-color: white;
+      color: purple;
+      border: 1px solid #ccc;
+    }
+    .myTable th {
+      color: #ee3e80 !important;
+    }
+    .myTable td#uno {
+      background-color: #66cdaa;
+      color: gold;
+    }
+    .myTable td#dos {
+      background-color: rgb(102, 205, 170);
+      color: blue;
+    }
+    .myTable td#tres {
+      background-color: mediumaquamarine;
+      color: red;
+    }
+  </style>
 </head>
 <body>
-  
+  <h1>Entendiendo el color - 2</h1>
+
+  <table class="myTable">
+    <tr>
+      <th>Valores TGB</th>
+      <th>Codigo Hexadeciamal</th>
+      <th>Nombre de Colores</th>
+    </tr>
+
+    <tr>
+      <td>Los valores de rojo, verde y azul se expresan como numero entre 0 y 255</td>
+      <td>Los valores Hexadeciamales repesentan valores par arojo. verde y azul en codigo Hexadeciamal.</td>
+      <td>Los colores se repesentan mediante nombres predefinidos. sin embargo, son muy limitados en numeros</td>
+    </tr>
+
+    <tr>
+      <td id="uno">Celda RGB</td>
+      <td id="dos">Celda Hex</td>
+      <td id="tres">Celda Name</td>
+    </tr>
+
+    <tr>
+      <td>
+        Es color se compone de los siguentes valores: <br>
+        102 rojo <br>
+        205 verde <br>
+        170 azul
+      </td>
+      <td>
+        El valor del rojo, 102, se expresa como 66 en codigo Hexadeciamal. <br>
+        El 205 del verde se expresa como cd <br>
+        y el 170 del azul equivalente a aa.
+      </td>
+      <td>
+        Hay 147 nombres de colores soportados por los navegadores (este color es mediumaquamarine). La mayoria considera que esto es un paleta de colores limitadas, y es dificl recordar el nombre de cad uno de los colores
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
