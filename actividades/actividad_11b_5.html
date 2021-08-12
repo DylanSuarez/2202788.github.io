@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/dectective.ico" type="image/x-icon">
+  <title>CSS Slectors</title>
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    th {
+      text-transform: uppercase;
+      color: #736fb3;
+    }
+    p {
+      padding: 5px;
+      line-height: 1em;
+    }
+    a {
+      color: #ff6666;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Selector</h1>
+  <p>Hay muchos tipos diferentes de selector CSS que le permite orientar las reglas a eelementos especificos en un documento HTML.</p>
+  <p>
+    Los selectores CSS distinguen entre mayusculas y minusculas, por lo que deben coincidir exactamente con los nombres del elemento y los valores del atributo.
+  </p>
+  <table border="2">
+    <caption>Tipos de Selectores</caption>
+
+    <thead>
+      <tr>
+        <th>Selector</th>
+        <th>Significado</th>
+        <th>Ejemplo</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Universal Selector</td>
+        <td>Coincide con los nombres del elemento</td>
+        <td><a href="">* {}</a> Se dirige a todoos los elementos de la pagina</td>
+      </tr>
+      <tr>
+        <td>Type Selector</td>
+        <td>Coincide con los nombres del elemento</td>
+        <td><a href="">h1, h2, h3 {}</a> Corresponde a los elementos &lt;h1&gt;, &lt;h2&gt; y &lt;h3&gt;</td>
+      </tr>
+      <tr>
+        <td>Class Selector</td>
+        <td>Coincide con un elemento cuyo atributo de clase tiene un valor que corresponda con el especificado despues del simbolo del punto</td>
+        <td><a href="">.nota {}</a> Se dirige a cualquier elemento cuyo atributo de clase tenga un valor de nota</td>
+      </tr>
+      <tr>
+        <td>Id Selector</td>
+        <td>Coincide con un elemento cuyo atributo de clase tiene un valor que corresponda con el especificado despues del simbolo del hast</td>
+        <td><a href="">#introduction {}</a></td> se dirige al elemento cuyo atributo ID tiene un valor de introduction
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
