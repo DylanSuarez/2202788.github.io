@@ -5,9 +5,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="images/dectective.ico" type="image/x-icon">
-  <title>Document</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      margin: 40px;
+      display: inline-block;
+      background-color: #ee3e80;
+    }
+    p {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      margin: 20px;
+    }
+    p.one {
+      background-color: rgba(0, 0, 0);
+      opacity: 0.5;
+    }
+    p.two {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    p.three, p.four {
+      background-color: white;
+      color: rgb(100, 100, 90);
+      width: 600px;
+    }
+  </style>
+  <title>Opacity</title>
 </head>
 <body>
-  
+  <div><p class="one"></p></div>
+  <div><p class="two"></p></div>
+  <p class="three">
+    CSS3 presenta la propiedad Opacity que le permite especificar la opacidad de un elemento y cualquiera de sus elementos secudarios. El valor es un numero entre 0.0 y 1.0 (por lo que un valor de 0.5 es 50% de opacidad y 0.15 es igual a 15% de opacidad).
+  </p>
+  <p class="four">
+    La propoedad CSS3 rgba le permite especificar un color. al igual que lo haaria con un valor RGB, pero agrega un cuarto valor para indicar la opacidad. Este se conoce como un valor alfa y un numerop entre 0.0 y 1.0 (por lo que un valor de 0.5 es 50% de opacidad y 0.15 es igual a 15% de opacidad). El valor RGBA solo afecta al elemento en que se lo aplica (No afecta a los elementos secundarios).
+  </p>
 </body>
 </html>
