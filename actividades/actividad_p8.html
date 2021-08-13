@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/dectective.ico" type="image/x-icon">
+  <style>
+    html {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: sans-serif;
+    }
+    *
+    *:after,
+    *:before {
+      box-sizing: inherit;
+    }
+    body {
+      margin: 0;
+      overflow-x: hidden;
+    }
+    .especifidad {
+      min-width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .box {
+      width: 35rem;
+      height: 8rem;
+      box-shadow: inset 2px 2px 2px #ccc, inset -2px -2px 2px #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      box-shadow: 2px 2px 8px #ccc;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: #000
+    }
+    .box.lvl1 {
+      background-color: #53c5e1;
+    }
+    .box.lvl2 {
+      background-color: #36bbdc;
+    }
+    .box.lvl3 {
+      background-color: #24abcc;
+    }
+    .box.lvl4 {
+      background-color: #1f93af;
+    }
+    .box.lvl5 {
+      background-color: #1a7b93;
+    }
+
+    .ejemplos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-bottom: 1rem;
+      gap: 16px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+      box-shadow: inset 2px 2px #ccc, inset -2px -2px #ccc;
+    }
+    form p {
+      display: inline-block;
+      color: deepskyblue;
+    }
+    form h1 {
+      color: deeppink;
+    }
+    .clase {
+      color: mediumslateblue;
+    }
+  </style>
+  <title>Actividad Personalizada 8</title>
+</head>
+<body>
+  <div class="especifidad">
+    <p><a href="https://developer.mozilla.org/es/docs/Web/CSS/Specificity">👉 Especificidad en CSS 👈</a></p>
+    <div class="box lvl5">👑<br>!important</div>
+    <div class="box lvl4">💪<br>estilos en linea</div>
+    <div class="box lvl3">🔥<br>ID</div>
+    <div class="box lvl2">🤦‍♂️<br>clases, atributos y pseudo-clases</div>
+    <div class="box lvl1">🙇‍♂️<br>elementos y pseudos-elementos</div>
+  </div>
+
+  <section class="ejemplos">
+    <form action="../index.html">
+      <h1>Ejemplos 1</h1>
+      <p class="clase">
+        &lt;p class="clase" &gt;Usando una clase&lt;/p&gt;
+      </p>
+      <p>
+        .clase { <br>
+          color: blue; <br>
+          font-size: 32px; <br>
+        }; <br><br>
+
+        p { <br>
+          color: red; <br>
+          font-size: 24px; <br>
+        };
+      </p>
+      <h2>¿Con cual estilo se queda?</h2>
+      <div class="pregustas">
+        <label for="questionOne">Azul y 32px</label>
+        <input type="checkbox" id="questionOne">
+        <label for="questionTwo">Rojo y 28px</label>
+        <input type="checkbox" id="questionTwo">
+      </div>
+    </form>
+
+
+    <form action="../index.html">
+      <h1>Ejemplo 2</h1>
+      <p class="clase">
+        &lt;p id="id" class="clase" &gt; Usando un clase y un id&lt;/div&gt;
+      </p>
+      <p>
+        .clase { <br>
+          color: green; <br>
+          font-size: 20px; <br>
+        }; <br><br>
+
+        #id { <br>
+          color: deeppink; <br>
+          font-size: 16px; <br>
+        };
+      </p>
+      <h2>¿Con cual estilo se queda?</h2>
+      <div class="preguntas">
+        <label for="questionOne">verde y 20px</label>
+        <input type="checkbox" id="questionOne">
+        <label for="questionTwo">amarillo y 16px</label>
+        <input type="checkbox" id="questionTwo">
+      </div>
+    </form>
+
+
+    <form action="../index.html">
+      <h1>Ejemplo 3</h1>
+      <p class="clase">
+        &lt;div id="id" class="box" &gt;¿?&lt;/p&gt;
+      </p>
+      <p>
+        .box { <br>
+          width: 500px; <br>
+          height: 300px; <br>
+          background-color: purple; <br>
+        } <br><br>
+        div { <br>
+          width: 300px; <br>
+          height: 300px; <br>
+          background-color: royalblue !important; <br>
+        }
+      </p>
+      <h2>¿Con cual estilo se queda?</h2>
+      <div class="preguntas">
+        <label for="questionOne">500px de ancho, 300px de alto y fondo purputa</label>
+        <input type="checkbox" id="questionOne"> <br>
+        <label for="questionTwo">300px ancho, 300px de alto y fondo azul claro</label>
+        <input type="checkbox" id="questionTwo"> <br>
+        <label for="questionThree">500px de ancho, 300px de alto y fondo azul claro</label>
+        <input type="checkbox" id="questionThree"> <br>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
