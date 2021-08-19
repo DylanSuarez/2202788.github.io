@@ -7,375 +7,90 @@
   <link rel="shortcut icon" href="./actividades/images/dectective.ico" type="image/x-icon">
   <title>Actividades HTML</title>
   <style>
-    table {
-      box-shadow: inset 2px 2px 16px 4px #ccc;
+    html {
+      box-sizing: border-box;
+      scroll-margin-top: 2ex;
     }
-    tbody tr:nth-child(even) {
-      background-color: #ccc;
+    *, *::after, *::before {
+      box-sizing: inherit;
+      scroll-behavior: smooth;
+    }
+    body {
+      width: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow-x: hidden;
+    }
+    header {
+      width: 100%;
+      height: 4rem;
+      position: sticky;
+      z-index: 999;
+      top: 0;
+      box-shadow: -1px 1px 8px #ccc;
+      background-color: #fff;
+    }
+    header .menu {
+      width: 1200px;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center ;
+      width: 90%;
+    }
+    header .menu a{
+      text-decoration: none;
+      color: #f06529;
+      padding: 0 8px;
+      border-left: 1px solid #000;
+      border-right: 1px solid #000;
+      transition: all .3s ease-in-out;
+    }
+    header .menu a:hover{
+      box-shadow: 0 1px 1px #f06529;
+      color: #f06529;
+    }
+
+    .container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 80vh;
+    }
+
+    table {
+      border: solid 1px #f06529;
+      text-align: center;
+    }
+    table th{
+      padding: 16px 0;
+      font-size: 28px;
+      border-bottom: solid 1px #f06529;
+    }
+    table td {
+      padding: 8px;
+      font-size: 16px;
+      border: solid 1px #f06529;
     }
   </style>
 </head>
-<body style="font-size: 18px; width: 100%; overflow-x: hidden; display: flex; justify-content: space-evenly; margin: 0;">
-
-  <table width="700" cellspacing="2" cellpadding="2" border="1" style="text-align: center; order: 1;">
-    <caption style="font-size: 32px; color: yellowgreen;">Actividades Hechas</caption>
-
-
-    <thead bgcolor="#ccc">
-      <th>Titulo Pagina</th>
-      <th>Actividades PDF</th>
-      <th>Actividades Personalizadas</th>
-    </thead>
-
-
-    <tbody>
-      <tr>
-        <td >Este es el titulo de la Pagina</td>
-        <td><a href="actividades/actividad_1.html" target="_blank">Actividad 1</a></td>
-        <td rowspan="5"><a href="actividades/actividad_p1.html" target="_blank">Personalizada 1 Etiquetas bascias</a></td>
-      </tr>
-      <tr>
-        <td >Actividad de ejemplo</td>
-        <td><a href="actividades/actividad_2.html" target="_blank">Actividad 2</a></td>
-      </tr>
-      <tr>
-        <td >Actividad de ejemplo 2</td>
-        <td><a href="actividades/actividad_3.html" target="_blank">Actividad 3</a></td>
-      </tr>
-      <tr>
-        <td >List</td>
-        <td><a href="actividades/actividad_4.html" target="_blank">Actividad 4</a></td>
-      </tr>
-      <tr>
-        <td >Fiestas nacionales de colombia</td>
-        <td><a href="actividades/actividad_5.html" target="_blank">Actividad 5</a></td>
-      </tr>
-
-
-      <tr>
-        <td >Adding Images</td>
-        <td><a href="actividades/actividad_6_1.html" target="_blank">Actividad 6-1</a></td>
-        <td rowspan="7"><a href="actividades/actividad_p2.html" target="_blank">Personalizada 2 Imagenes</a></td>
-      </tr>
-      <tr>
-        <td >Height and width of images</td>
-        <td><a href="actividades/actividad_6_2.html" target="_blank">Actividad 6-2</a></td>
-      </tr>
-      <tr>
-        <td >Sea otters</td>
-        <td><a href="actividades/actividad_6_3.html" target="_blank">Actividad 6-3</a></td>
-      </tr>
-      <tr>
-        <td >Where To Place Images In You Code</td>
-        <td><a href="actividades/actividad_6_4.html" target="_blank">Actividad 6-4</a></td>
-      </tr>
-      <tr>
-        <td >Aligninh Images Horizontally</td>
-        <td><a href="actividades/actividad_6_5.html" target="_blank">Actividad 6-5</a></td>
-      </tr>
-      <tr>
-        <td >Aligning Vertically</td>
-        <td><a href="actividades/actividad_6_6.html" target="_blank">Actividad 6-6</a></td>
-      </tr>
-      <tr>
-        <td >Images</td>
-        <td><a href="actividades/actividad_6_7.html" target="_blank">Actividad 6-7</a></td>
-      </tr>
-
-
-      <tr>
-        <td >Los formularios</td>
-        <td><a href="actividades/actividad_7_1.html" target="_blank">Actividad 7-1</a></td>
-        <td rowspan="15"><a href="actividades/actividad_p3.html" target="_blank">Personalizada 3 Formularios</a></td>
-      </tr>
-      <tr>
-        <td >Text Input</td>
-        <td><a href="actividades/actividad_7_2.html" target="_blank">Actividad 7-2</a></td>
-      </tr>
-      <tr>
-        <td >Password Input</td>
-        <td><a href="actividades/actividad_7_3.html" target="_blank">Actividad 7-3</a></td>
-      </tr>
-      <tr>
-        <td >Textarea</td>
-        <td><a href="actividades/actividad_7_4.html" target="_blank">Actividad 7-4</a></td>
-      </tr>
-      <tr>
-        <td >Radio Buttom</td>
-        <td><a href="actividades/actividad_7_5.html" target="_blank">Actividad 7-5</a></td>
-      </tr>
-      <tr>
-        <td >Checkbox</td>
-        <td><a href="actividades/actividad_7_6.html" target="_blank">Actividad 7-6</a></td>
-      </tr>
-      <tr>
-        <td >Drop Dowm List Box</td>
-        <td><a href="actividades/actividad_7_7.html" target="_blank">Actividad 7-7</a></td>
-      </tr>
-      <tr>
-        <td >Multiple Select Box</td>
-        <td><a href="actividades/actividad_7_8.html" target="_blank">Actividad 7-8</a></td>
-      </tr>
-      <tr>
-        <td >Fine Input Box</td>
-        <td><a href="actividades/actividad_7_9.html" target="_blank">Actividad 7-9</a></td>
-      </tr>
-      <tr>
-        <td >Submit Buttom</td>
-        <td><a href="actividades/actividad_7_10.html" target="_blank">Actividad 7-10</a></td>
-      </tr>
-      <tr>
-        <td >Image Buttom</td>
-        <td><a href="actividades/actividad_7_11.html" target="_blank">Actividad 7-11</a></td>
-      </tr>
-      <tr>
-        <td >Labelling From Crontrols</td>
-        <td><a href="actividades/actividad_7_12.html" target="_blank">Actividad 7-12</a></td>
-      </tr>
-      <tr>
-        <td >Grouping Form Elements</td>
-        <td><a href="actividades/actividad_7_13.html" target="_blank">Actividad 7-13</a></td>
-      </tr>
-      <tr>
-        <td >HTML5 Form Validation</td>
-        <td><a href="actividades/actividad_7_14.html" target="_blank">Actividad 7-14</a></td>
-      </tr>
-      <tr>
-        <td >HTML5 Input</td>
-        <td><a href="actividades/actividad_7_15.html" target="_blank">Actividad 7-15</a></td>
-      </tr>
-
-
-      <tr>
-        <td >Estructura Basica Tablas</td>
-        <td><a href="actividades/actividad_8_1.html" target="_blank">Actividad 8-1</a></td>
-        <td rowspan="7"><a href="actividades/actividad_p4.html" target="_blank">Personalizada 4 Tablas</a></td>
-      </tr>
-      <tr>
-        <td >Tabla Headings</td>
-        <td><a href="actividades/actividad_8_2.html" target="_blank">Actividad 8-2</a></td>
-      </tr>
-      <tr>
-        <td >Spanning Columns</td>
-        <td><a href="actividades/actividad_8_3.html" target="_blank">Actividad 8-3</a></td>
-      </tr>
-      <tr>
-        <td >Spanning Rows</td>
-        <td><a href="actividades/actividad_8_4.html" target="_blank">Actividad 8-4</a></td>
-      </tr>
-      <tr>
-        <td >Long Tables</td>
-        <td><a href="actividades/actividad_8_5.html" target="_blank">Actividad 8-5</a></td>
-      </tr>
-      <tr>
-        <td >Widht And Spacing</td>
-        <td><a href="actividades/actividad_8_6.html" target="_blank">Actividad 8-6</a></td>
-      </tr>
-      <tr>
-        <td >Trabajando Con Tablas</td>
-        <td><a href="actividades/actividad_8_7.html" target="_blank">Actividad 8-7</a></td>
-      </tr>
-
-
-      <tr>
-        <td >ID Attribute</td>
-        <td><a href="actividades/actividad_9_1.html" target="_blank">Actividad 9-1</a></td>
-        <td rowspan="6"><a href="actividades/actividad_p5.html" target="_blank">Personalizada 5 Clases, Identificadores <br>  y iframes</a></td>
-      </tr>
-      <tr>
-        <td >Class Attribute</td>
-        <td><a href="actividades/actividad_9_2.html" target="_blank">Actividad 9-2</a></td>
-      </tr>
-      <tr>
-        <td >Grouping Block Elements</td>
-        <td><a href="actividades/actividad_9_3.html" target="_blank">Actividad 9-3</a></td>
-      </tr>
-      <tr>
-        <td >Frames</td>
-        <td><a href="actividades/actividad_9_4.html" target="_blank">Actividad 9-4</a></td>
-      </tr>
-      <tr>
-        <td >Information About Your Pages</td>
-        <td><a href="actividades/actividad_9_5.html" target="_blank">Actividad 9-5</a></td>
-      </tr>
-      <tr>
-        <td >IEA Colegio Gonzalo Arango</td>
-        <td><a href="actividades/actividad_9_6.html" target="_blank">Actividad 9-6</a></td>
-      </tr>
-
-
-      <tr>
-        <td>Adding HTML5 Video</td>
-        <td><a href="./actividades/actividad_10_1.html" target="_blank">Actividad 10-1</a></td>
-        <td rowspan="6" bgcolor="#ccc"><a href="./actividades/actividad_p6.html" target="_blank">Personalizada 6 video, audio</a></td>
-      </tr>
-      <tr>
-        <td>Multiple Video Sources</td>
-        <td><a href="./actividades/actividad_10_2.html" target="_blank">Actividad 10-2</a></td>
-      </tr>
-      <tr>
-        <td>Adding HTML5 Audio</td>
-        <td><a href="./actividades/actividad_10_3.html" target="_blank">Actividad 10-3</a></td>
-      </tr>
-      <tr>
-        <td>Multiple Audio Sources</td>
-        <td><a href="./actividades/actividad_10_4.html" target="_blank">Actividad 10-4</a></td>
-      </tr>
-      <tr>
-        <td>HTML Youtube Videos</td>
-        <td><a href="./actividades/actividad_10_5.html" target="_blank">Actividad 10-5</a></td>
-      </tr>
-      <tr>
-        <td>Flash, Video and Audio</td>
-        <td><a href="./actividades/actividad_10_6.html" target="_blank">Actividad 10-6</a></td>
-      </tr>
-
-      
-      <tr>
-        <td>Exercise 1</td>
-        <td><a href="./actividades/actividad_11a_1.html" target="_blank">Actividad 11a-1</a></td>
-        <td rowspan="2"><a href="./actividades/actividad_p7.html" target="_blank">Personalizada 7 styles</a></td>
-      </tr>
-      <tr>
-        <td>Exercise 2</td>
-        <td><a href="./actividades/actividad_11a_2.html" target="_blank">Actividad 11a-2</a></td>
-      </tr>
-    </tbody>
-
-
-    <tr>
-      <td>Understanding CSS - Thinking Inside the box 1</td>
-      <td><a href="./actividades/actividad_11b_1.html" target="_blank">Actividad 11b-1</a></td>
-      <td rowspan="8" bgcolor="#ccc"><a href="./actividades/actividad_p8.html" target="_blank">Personalizada 8 css</a></td>
-    </tr>
-    <tr>
-      <td>Understanding CSS - Thinking Inside the box 2</td>
-      <td><a href="./actividades/actividad_11b_2.html" target="_blank">Actividad 11b-2</a></td>
-    </tr>
-    <tr>
-      <td>Understanding CSS - Thinking Inside the box 3</td>
-      <td><a href="./actividades/actividad_11b_3.html" target="_blank">Actividad 11b-3</a></td>
-    </tr>
-    <tr>
-      <td>Using Internal CSS</td>
-      <td><a href="./actividades/actividad_11b_4.html" target="_blank">Actividad 11b-4</a></td>
-    </tr>
-    <tr>
-      <td>CSS Selectors</td>
-      <td><a href="./actividades/actividad_11b_5.html" target="_blank">Actividad 11b-5</a></td>
-    </tr>
-    <tr>
-      <td>Como Aplicar Reglas En Cascada</td>
-      <td><a href="./actividades/actividad_11b_6.html" target="_blank">Actividad 11b-6</a></td>
-    </tr>
-    <tr>
-      <td>How CSS Rules Cascade</td>
-      <td><a href="./actividades/actividad_11b_7.html" target="_blank">Actividad 11b-7</a></td>
-    </tr>
-    <tr>
-      <td>Inheritance</td>
-      <td><a href="./actividades/actividad_11b_8.html" target="_blank">Actividad 11b-8</a></td>
-    </tr>
-
-    
-    <tr>
-      <td>Foreground Color</td>
-      <td><a href="./actividades/actividad_12_1.html" target="_blank">Actividad 12-1</a></td>
-      <td rowspan="8"><a href="./actividades/actividad_p9.html" target="_blank">Personalizada 9 Colors</a></td>
-    </tr>
-    <tr>
-      <td>Background Color</td>
-      <td><a href="./actividades/actividad_12_2.html" target="_blank">Actividad 12-2</a></td>
-    </tr>
-    <tr>
-      <td>Understanding Color - 1</td>
-      <td><a href="./actividades/actividad_12_3.html" target="_blank">Actividad 12-3</a></td>
-    </tr>
-    <tr>
-      <td>Understanding Color - 2</td>
-      <td><a href="./actividades/actividad_12_4.html" target="_blank">Actividad 12-4</a></td>
-    </tr>
-    <tr>
-      <td>Understanding Color - 3</td>
-      <td><a href="./actividades/actividad_12_5.html" target="_blank">Actividad 12-5</a></td>
-    </tr>
-    <tr>
-      <td>Opacity</td>
-      <td><a href="./actividades/actividad_12_6.html" target="_blank">Actividad 12-6</a></td>
-    </tr>
-    <tr>
-      <td>HSL & HSLA</td>
-      <td><a href="./actividades/actividad_12_7.html" target="_blank">Actividad 12-7</a></td>
-    </tr>
-    <tr>
-      <td>Color</td>
-      <td><a href="./actividades/actividad_12_8.html" target="_blank">Actividad 12-8</a></td>
-    </tr>
-
-    
-    <tr>
-      <td>Font Family</td>
-      <td><a href="./actividades/actividad_13_1.html" target="_blank">Actividad 13-1</a></td>
-      <td rowspan="15" bgcolor="#ccc"><a href="./actividades/actividad_p10.html" target="_blank">Personalizada 10 Fonts</a></td>
-    </tr>
-    <tr>
-      <td>Font Size</td>
-      <td><a href="./actividades/actividad_13_2.html" target="_blank">Actividad 13-2</a></td>
-    </tr>
-    <tr>
-      <td>Font Face</td>
-      <td><a href="./actividades/actividad_13_3.html" target="_blank">Actividad 13-3</a></td>
-    </tr>
-    <tr>
-      <td>Font Properties</td>
-      <td><a href="./actividades/actividad_13_4.html" target="_blank">Actividad 13-4</a></td>
-    </tr>
-    <tr>
-      <td>Text Transform</td>
-      <td><a href="./actividades/actividad_13_5.html" target="_blank">Actividad 13-5</a></td>
-    </tr>
-    <tr>
-      <td>Text Decortion</td>
-      <td><a href="./actividades/actividad_13_6.html" target="_blank">Actividad 13-6</a></td>
-    </tr>
-    <tr>
-      <td>Line Height</td>
-      <td><a href="./actividades/actividad_13_7.html" target="_blank">Actividad 13-7</a></td>
-    </tr>
-    <tr>
-      <td>Letter and Word Spacing</td>
-      <td><a href="./actividades/actividad_13_8.html" target="_blank">Actividad 13-8</a></td>
-    </tr>
-    <tr>
-      <td>Text Align</td>
-      <td><a href="./actividades/actividad_13_9.html" target="_blank">Actividad 13-9</a></td>
-    </tr>
-    <tr>
-      <td>Vertical Align</td>
-      <td><a href="./actividades/actividad_13_10.html" target="_blank">Actividad 13-10</a></td>
-    </tr>
-    <tr>
-      <td>Text Ident - Firt-Letter</td>
-      <td><a href="./actividades/actividad_13_11.html" target="_blank">Actividad 13-11</a></td>
-    </tr>
-    <tr>
-      <td>Text Shadow</td>
-      <td><a href="./actividades/actividad_13_12.html" target="_blank">Actividad 13-12</a></td>
-    </tr>
-    <tr>
-      <td>Hover Active Focus</td>
-      <td><a href="./actividades/actividad_13_13.html" target="_blank">Actividad 13-13</a></td>
-    </tr>
-    <tr>
-      <td>Link Visited</td>
-      <td><a href="./actividades/actividad_13_14.html" target="_blank">Actividad 13-14</a></td>
-    </tr>
-    <tr>
-      <td>Text Properties</td>
-      <td><a href="./actividades/actividad_13_15.html" target="_blank">Actividad 13-15</a></td>
-    </tr>
-  </table>
-
+<body>
+  <header>
+    <nav class="menu">
+      <a href="#unidad1-5">Unidad 1-5</a>
+      <a href="#unidad6">Unidad 6</a>
+      <a href="#unidad7">Unidad 7</a>
+      <a href="#unidad8">Unidad 8</a>
+      <a href="#unidad9">Unidad 9</a>
+      <a href="#unidad10">Unidad 10</a>
+      <a href="#unidad11a">Unidad 11a</a>
+      <a href="#unidad11b">Unidad 11b</a>
+      <a href="#unidad12">Unidad 12</a>
+      <a href="#unidad13">Unidad 13</a>
+    </nav>
+  </header>
 
   <div>
     <h2>Contenido de la tabla</h2>
@@ -393,5 +108,387 @@
     </ul>
   </div>
 
+  <section class="container" id="unidad1-5">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="5">Unidad 1, 2, 3, 4 y 5</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Este es el titulo de la Pagina</td>
+          <td>Actividad de ejemplo</td>
+          <td>Actividad de ejemplo 2</td>
+          <td>List</td>
+          <td>Fiestas nacionales de colombia</td>
+        </tr>
+        <tr>
+          <td><a href="actividades/actividad_1.html" target="_blank">Actividad 1</a></td>
+          <td><a href="actividades/actividad_2.html" target="_blank">Actividad 2</a></td>
+          <td><a href="actividades/actividad_3.html" target="_blank">Actividad 3</a></td>
+          <td><a href="actividades/actividad_4.html" target="_blank">Actividad 4</a></td>
+          <td><a href="actividades/actividad_5.html" target="_blank">Actividad 5</a></td>
+        </tr>
+        <tr>
+          <td colspan="5"><a href="actividades/actividad_p1.html" target="_blank">Personalizada 1 Etiquetas bascias</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <section class="container" id="unidad6">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="7">Unidad 6</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td >Adding Images</td>
+          <td >Height and width of images</td>
+          <td >Sea otters</td>
+          <td >Where To Place Images In You Code</td>
+          <td >Aligninh Images Horizontally</td>
+          <td >Aligning Vertically</td>
+          <td >Images</td>
+        </tr>
+        <tr>
+          <td><a href="actividades/actividad_6_1.html" target="_blank">Actividad 6-1</a></td>
+          <td><a href="actividades/actividad_6_2.html" target="_blank">Actividad 6-2</a></td>
+          <td><a href="actividades/actividad_6_3.html" target="_blank">Actividad 6-3</a></td>
+          <td><a href="actividades/actividad_6_4.html" target="_blank">Actividad 6-4</a></td>
+          <td><a href="actividades/actividad_6_5.html" target="_blank">Actividad 6-5</a></td>
+          <td><a href="actividades/actividad_6_6.html" target="_blank">Actividad 6-6</a></td>
+          <td><a href="actividades/actividad_6_7.html" target="_blank">Actividad 6-7</a></td>
+        </tr>
+        <tr>
+          <td colspan="7"><a href="actividades/actividad_p2.html" target="_blank">Personalizada 2 Imagenes</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <section class="container" id="unidad7">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="15">Unidad 7</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td >Los formularios</td>
+          <td >Text Input</td>
+          <td >Password Input</td>
+          <td >Textarea</td>
+          <td >Radio Buttom</td>
+        </tr>
+        <tr>
+          <td><a href="actividades/actividad_7_1.html" target="_blank">Actividad 7-1</a></td>
+          <td><a href="actividades/actividad_7_2.html" target="_blank">Actividad 7-2</a></td>
+          <td><a href="actividades/actividad_7_3.html" target="_blank">Actividad 7-3</a></td>
+          <td><a href="actividades/actividad_7_4.html" target="_blank">Actividad 7-4</a></td>
+          <td><a href="actividades/actividad_7_5.html" target="_blank">Actividad 7-5</a></td>
+        </tr>
+        <tr>
+          <td >Checkbox</td>
+          <td >Drop Dowm List Box</td>
+          <td >Multiple Select Box</td>
+          <td >Fine Input Box</td>
+          <td >Submit Buttom</td>
+        </tr>
+        <tr>
+          <td><a href="actividades/actividad_7_6.html" target="_blank">Actividad 7-6</a></td>
+          <td><a href="actividades/actividad_7_7.html" target="_blank">Actividad 7-7</a></td>
+          <td><a href="actividades/actividad_7_8.html" target="_blank">Actividad 7-8</a></td>
+          <td><a href="actividades/actividad_7_9.html" target="_blank">Actividad 7-9</a></td>
+          <td><a href="actividades/actividad_7_10.html" target="_blank">Actividad 7-10</a></td>
+        </tr>
+        <tr>
+          <td >Image Buttom</td>
+          <td >Labelling From Crontrols</td>
+          <td >Grouping Form Elements</td>
+          <td >HTML5 Form Validation</td>
+          <td >HTML5 Input</td>
+        </tr>
+        <tr>
+          <td><a href="actividades/actividad_7_11.html" target="_blank">Actividad 7-11</a></td>
+          <td><a href="actividades/actividad_7_12.html" target="_blank">Actividad 7-12</a></td>
+          <td><a href="actividades/actividad_7_13.html" target="_blank">Actividad 7-13</a></td>
+          <td><a href="actividades/actividad_7_14.html" target="_blank">Actividad 7-14</a></td>
+          <td><a href="actividades/actividad_7_15.html" target="_blank">Actividad 7-15</a></td>
+        </tr>
+        <tr>
+          <td colspan="15"><a href="actividades/actividad_p3.html" target="_blank">Personalizada 3 Formularios</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <section class="container" id="unidad8">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="7">Unidad 8</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td >Estructura Basica Tablas</td>
+          <td >Tabla Headings</td>
+          <td >Spanning Columns</td>
+          <td >Spanning Rows</td>
+          <td >Long Tables</td>
+          <td >Widht And Spacing</td>
+          <td >Trabajando Con Tablas</td>
+        </tr>
+        <tr>
+          <td><a href="actividades/actividad_8_1.html" target="_blank">Actividad 8-1</a></td>
+          <td><a href="actividades/actividad_8_2.html" target="_blank">Actividad 8-2</a></td>
+          <td><a href="actividades/actividad_8_3.html" target="_blank">Actividad 8-3</a></td>
+          <td><a href="actividades/actividad_8_4.html" target="_blank">Actividad 8-4</a></td>
+          <td><a href="actividades/actividad_8_5.html" target="_blank">Actividad 8-5</a></td>
+          <td><a href="actividades/actividad_8_6.html" target="_blank">Actividad 8-6</a></td>
+          <td><a href="actividades/actividad_8_7.html" target="_blank">Actividad 8-7</a></td>
+        </tr>
+        <tr>
+          <td colspan="7"><a href="actividades/actividad_p4.html" target="_blank">Personalizada 4 Tablas</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <section class="container" id="unidad9">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="6">Unidad 9</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td >ID Attribute</td>
+          <td >Class Attribute</td>
+          <td >Grouping Block Elements</td>
+          <td >Frames</td>
+          <td >Information About Your Pages</td>
+          <td >IEA Colegio Gonzalo Arango</td>
+        </tr>
+        <tr>
+          <td><a href="actividades/actividad_9_1.html" target="_blank">Actividad 9-1</a></td>
+          <td><a href="actividades/actividad_9_2.html" target="_blank">Actividad 9-2</a></td>
+          <td><a href="actividades/actividad_9_3.html" target="_blank">Actividad 9-3</a></td>
+          <td><a href="actividades/actividad_9_4.html" target="_blank">Actividad 9-4</a></td>
+          <td><a href="actividades/actividad_9_5.html" target="_blank">Actividad 9-5</a></td>
+          <td><a href="actividades/actividad_9_6.html" target="_blank">Actividad 9-6</a></td>
+        </tr>
+        <tr>
+          <td colspan="6"><a href="actividades/actividad_p5.html" target="_blank">Personalizada 5 Clases, Identificadores <br>  y iframes</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <section class="container" id="unidad10">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="6">Unidad 10</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Adding HTML5 Video</td>
+          <td>Multiple Video Sources</td>
+          <td>Adding HTML5 Audio</td>
+          <td>Multiple Audio Sources</td>
+          <td>HTML Youtube Videos</td>
+          <td>Flash, Video and Audio</td>
+        </tr>
+        <tr>
+          <td><a href="./actividades/actividad_10_1.html" target="_blank">Actividad 10-1</a></td>
+          <td><a href="./actividades/actividad_10_2.html" target="_blank">Actividad 10-2</a></td>
+          <td><a href="./actividades/actividad_10_3.html" target="_blank">Actividad 10-3</a></td>
+          <td><a href="./actividades/actividad_10_4.html" target="_blank">Actividad 10-4</a></td>
+          <td><a href="./actividades/actividad_10_5.html" target="_blank">Actividad 10-5</a></td>
+          <td><a href="./actividades/actividad_10_6.html" target="_blank">Actividad 10-6</a></td>
+        </tr>
+        <tr>
+          <td colspan="6"><a href="./actividades/actividad_p6.html" target="_blank">Personalizada 6 video, audio</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <section class="container" id="unidad11a">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Unidad 11a</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>El gran salon 1</td>
+          <td>El gran salon 1</td>
+        </tr>
+        <tr>
+          <td><a href="./actividades/actividad_11a_1.html" target="_blank">Actividad 11a-1</a></td>
+          <td><a href="./actividades/actividad_11a_2.html" target="_blank">Actividad 11a-2</a></td>
+        </tr>
+        <tr>
+          <td colspan="2"><a href="./actividades/actividad_p7.html" target="_blank">Personalizada 7 styles</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <section class="container" id="unidad11b">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="8">Unidad 11b</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Understanding CSS - Thinking Inside the box 1</td>
+          <td>Understanding CSS - Thinking Inside the box 2</td>
+          <td>Understanding CSS - Thinking Inside the box 3</td>
+          <td>Using Internal CSS</td>
+          <td>CSS Selectors</td>
+          <td>Como Aplicar Reglas En Cascada</td>
+          <td>How CSS Rules Cascade</td>
+          <td>Inheritance</td>
+        </tr>
+        <tr>
+          <td><a href="./actividades/actividad_11b_1.html" target="_blank">Actividad 11b-1</a></td>
+          <td><a href="./actividades/actividad_11b_2.html" target="_blank">Actividad 11b-2</a></td>
+          <td><a href="./actividades/actividad_11b_3.html" target="_blank">Actividad 11b-3</a></td>
+          <td><a href="./actividades/actividad_11b_4.html" target="_blank">Actividad 11b-4</a></td>
+          <td><a href="./actividades/actividad_11b_5.html" target="_blank">Actividad 11b-5</a></td>
+          <td><a href="./actividades/actividad_11b_6.html" target="_blank">Actividad 11b-6</a></td>
+          <td><a href="./actividades/actividad_11b_7.html" target="_blank">Actividad 11b-7</a></td>
+          <td><a href="./actividades/actividad_11b_8.html" target="_blank">Actividad 11b-8</a></td>
+        </tr>
+        <tr>
+          <td colspan="8"><a href="./actividades/actividad_p8.html" target="_blank">Personalizada 8 css</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <section class="container" id="unidad12">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="8">Unidad 12</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Foreground Color</td>
+          <td>Background Color</td>
+          <td>Understanding Color - 1</td>
+          <td>Understanding Color - 2</td>
+          <td>Understanding Color - 3</td>
+          <td>Opacity</td>
+          <td>HSL & HSLA</td>
+          <td>Color</td>
+        </tr>
+        <tr>
+          <td><a href="./actividades/actividad_12_1.html" target="_blank">Actividad 12-1</a></td>
+          <td><a href="./actividades/actividad_12_2.html" target="_blank">Actividad 12-2</a></td>
+          <td><a href="./actividades/actividad_12_3.html" target="_blank">Actividad 12-3</a></td>
+          <td><a href="./actividades/actividad_12_4.html" target="_blank">Actividad 12-4</a></td>
+          <td><a href="./actividades/actividad_12_5.html" target="_blank">Actividad 12-5</a></td>
+          <td><a href="./actividades/actividad_12_6.html" target="_blank">Actividad 12-6</a></td>
+          <td><a href="./actividades/actividad_12_7.html" target="_blank">Actividad 12-7</a></td>
+          <td><a href="./actividades/actividad_12_8.html" target="_blank">Actividad 12-8</a></td>
+        </tr>
+        <tr>
+          <td colspan="8"><a href="./actividades/actividad_p9.html" target="_blank">Personalizada 9 Colors</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <section class="container" id="unidad13">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="5">Unidad 13</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Font Family</td>
+          <td>Font Size</td>
+          <td>Font Face</td>
+          <td>Font Properties</td>
+          <td>Text Transform</td>
+        </tr>
+        <tr>
+          <td><a href="./actividades/actividad_13_1.html" target="_blank">Actividad 13-1</a></td>
+          <td><a href="./actividades/actividad_13_2.html" target="_blank">Actividad 13-2</a></td>
+          <td><a href="./actividades/actividad_13_3.html" target="_blank">Actividad 13-3</a></td>
+          <td><a href="./actividades/actividad_13_4.html" target="_blank">Actividad 13-4</a></td>
+          <td><a href="./actividades/actividad_13_5.html" target="_blank">Actividad 13-5</a></td>
+        </tr>
+        <tr>
+          <td>Text Decortion</td>
+          <td>Line Height</td>
+          <td>Letter and Word Spacing</td>
+          <td>Text Align</td>
+          <td>Vertical Align</td>
+        </tr>
+        <tr>
+          <td><a href="./actividades/actividad_13_6.html" target="_blank">Actividad 13-6</a></td>
+          <td><a href="./actividades/actividad_13_7.html" target="_blank">Actividad 13-7</a></td>
+          <td><a href="./actividades/actividad_13_8.html" target="_blank">Actividad 13-8</a></td>
+          <td><a href="./actividades/actividad_13_9.html" target="_blank">Actividad 13-9</a></td>
+          <td><a href="./actividades/actividad_13_10.html" target="_blank">Actividad 13-10</a></td>
+        </tr>
+        <tr>
+          <td>Text Ident - Firt-Letter</td>
+          <td>Text Shadow</td>
+          <td>Hover Active Focus</td>
+          <td>Link Visited</td>
+          <td>Text Properties</td>
+        </tr>
+        <tr>
+          <td><a href="./actividades/actividad_13_11.html" target="_blank">Actividad 13-11</a></td>
+          <td><a href="./actividades/actividad_13_12.html" target="_blank">Actividad 13-12</a></td>
+          <td><a href="./actividades/actividad_13_13.html" target="_blank">Actividad 13-13</a></td>
+          <td><a href="./actividades/actividad_13_14.html" target="_blank">Actividad 13-14</a></td>
+          <td><a href="./actividades/actividad_13_15.html" target="_blank">Actividad 13-15</a></td>
+        </tr>
+        <tr>
+          <td colspan="5"><a href="./actividades/actividad_p10.html" target="_blank">Personalizada 10 Fonts</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 </body>
 </html>
