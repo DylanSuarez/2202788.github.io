@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/dectective.ico" type="image/x-icon">
+  <title>Border width - Displey - Visibility</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; color: #111; }
+    p { width: 800px; border-style: solid; }
+    p.one { border-width: 2px; }
+    p.two { border-width: thick; }
+    p.three { border-width: 1px 4px 12px 4px; }
+    li { display: inherit; margin-right: 10px; }
+    li.proximamente1 { display: none; }
+    li.proximamente2 { visibility: hidden; }
+  </style>
+</head>
+<body>
+  <p class="one">La propiedad border-width se utiliza para el ancho de un borde.</p>
+  <p class="two">Se utiliza los siguentes valores: thin, medium, thick.</p>
+  <p class="three"> Se puede espeificar diferentes anchos para los cuatro valores de borde es una propiedad.</p>
+  <br>
+
+  <p>La propiedad: displey permite tranformar un elemento de linea a bloquey viseversa, y tambien se utilizar par ocultar elementos de la pagina.</p>
+  <br>
+  <ul>
+    <li>Home</li>
+    <li>Productos</li>
+    <li class="proximamente1">Servicios</li>
+    <li>Acerca</li>
+    <li>Cotacto</li>
+  </ul>
+  <br>
+
+  <p>La propiedad: visibility permite ocultar los elementos, pero deja un espacio donde habria estado el elemento</p>
+  <br>
+  <ul>
+    <li>Home</li>
+    <li>Productos</li>
+    <li class="proximamente2">Servicios</li>
+    <li>Acerca</li>
+    <li>Cotacto</li>
+  </ul>
+</body>
+</html>

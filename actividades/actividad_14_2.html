@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/dectective.ico" type="image/x-icon">
+  <title>Min width - max width</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #111;
+    }
+    th {
+      border-bottom: 1px solid #0088dd;
+      text-align: left;
+      color: #0088dd;
+      font-weight: normal;
+    }
+    td {
+      min-width: 150px;
+      min-height: 200px;
+      vertical-align: top;
+      line-height: 1.4em;
+    }
+    td.desciption {
+      min-width: 450px;
+      max-width: 650px;      
+      text-align: left;
+      padding: 5px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Photo</th>
+        <th>Desciption</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td><img src="./images/rhodes.jpg" alt="Fender Rhodes" width="200" height="150" ></td>
+        <td class="desciption">
+          Algunos diseños de pagina se expanden y se reducen para ajustarse al tamaño de la pantalla del usuario. Se utiliza la propiedad min-width y la propiedad max-width.
+        </td>
+        <td>$1400</td>
+      </tr>
+
+      <tr>
+        <td><img src="./images/wurlitzer.jpg" alt="Wurlitzer" width="200" height="150"></td>
+        <td class="desciption">
+          Estas son prpiedades muy utiles para garatizar que el contenido de las paginas sean legibles (especiamente es las patanllas mas pequeñas de despositivos portatiles).
+        </td>
+        <td>$1600</td>
+      </tr>
+
+      <tr>
+        <td><img src="./images/clavinet.jpg" alt="Hohner Clabvinet D6" width="200" height="150"></td>
+        <td class="desciption">
+          Es util probar este ejemplo en el navegador para ver los que sucede caundo aumentamos o disminuye el tamaño de la ventana del navegador.
+        </td>
+        <td>$1200</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

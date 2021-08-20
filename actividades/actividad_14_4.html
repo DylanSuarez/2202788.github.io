@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/dectective.ico" type="image/x-icon">
+  <title>Overflow</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #111;
+      font-size: 90%;
+      line-height: 1.2em;
+      width: 200px;
+    }
+    h2 {
+      color: #0088dd;
+      border-bottom: 1px solid #0088dd;
+    }
+    p {
+      min-height: 30px;
+      max-height: 30px;
+    }
+    p.one {
+      overflow: hidden;
+    }
+    p.two {
+      overflow: scroll;
+    }
+  </style>
+</head>
+<body>
+  <p>Overflow indica que hacer si el contenido incluido en una caja es mayor que el de la propia caja.</p>
+  <p>Puede tener uno de los valores:</p>
+
+  <h2>Hidden</h2>
+  <p class="one">Es propiedad simplemente oculta cualquier Contenido adiciconal que no encaje en la caja</p>
+
+  <h2>scroll</h2>
+  <p class="two">Es propoedad agrega un barra de desplazamiento a la caja para que los usuarios puedad desplazarse para ver el conteido que falta.</p>
+</body>
+</html>
