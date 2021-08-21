@@ -5,9 +5,53 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/dectective.ico" type="image/x-icon">
-  <title>Document</title>
+  <title>Boxshadow</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: #e1ddda;
+      margin: 20px;
+      display: inline-block;
+    }
+    div.one {
+      -moz-box-shadow: -5px -5px #777;
+      -webkit-box-shadow: -5px -5px #777;
+    }
+    div.two {
+      -moz-box-shadow: 5px 5px 5px #777;
+      -webkit-box-shadow: 5px 5px 5px #777;
+    }
+    div.three {
+      -moz-box-shadow: 5px 5px 5px 5px #777;
+      -webkit-box-shadow: 5px 5px 5px 5px #777;
+    }
+    div.four {
+      -moz-box-shadow: 0 0 10px #777;
+      -webkit-box-shadow: 0 0 10px #777;
+    }
+    div.five {
+      -moz-box-shadow: inset 0 0 10px #777;
+      -webkit-box-shadow: inset 0 0 10px #777;
+    }
+    p.text {
+      width: 500px;
+      height: 200px;
+      background-color: #e1ddda;
+      margin: 20px;
+      display: inline-block;
+    }
+  </style>
 </head>
 <body>
-  
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="four"></div>
+  <div class="five"></div>
+
+  <p class="text">
+    La propiedad box-shadow permite agregar una sombra paralela alrededor de un caja. Funciona igual que la propiedad text-shadow. Chrome, Firefox y Safari admiten es propiedad con las propiedades: -moz-box-shadow y -webkit-box-shadow. Estos no estan es la especificacion CSS pero usar los pueden ayudar a este estilo para trabajar n estos navegadores.
+  </p>
 </body>
 </html>

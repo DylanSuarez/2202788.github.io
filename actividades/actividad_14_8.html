@@ -6,8 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/dectective.ico" type="image/x-icon">
   <title>padding - margin - centering content</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; color: #111; }
+    p { width: 275px; border: 2px solid #0088dd; }
+    p.example_pad { padding: 10px; }
+    p.example_mar { margin: 30px; }
+    p.example_cent { margin: 10px auto; text-align: left; }
+  </style>
 </head>
 <body>
-  
+  <p>La propiedad padding permite especificar cuanto espacio hay entre el contenido y el borde de la caja</p>
+  <p class="example_pad">
+    El valor de esta propiedad se especifica con mayor frecuencia en pixeles (aunque tambien es posible usar porcentajes o EMS). El parrafo aquie es mucho mas facil de leer porque hay un espacio entre el texto y el borde de la caja.
+  </p>
+  <p class="example_mar">
+    La propiedad matginn controla la separacion entre cajas, Su valor se sule dar en pixeles, aunque tambien puede utilizar porcentajes o EMS.
+  </p>
+  <p class="example_cent">
+    Si desea centrar una caja en la pagina (o centrar dentro del elemento en el que se encuentra), puede establecer el margen izquierndo y el marger derechco automatico.
+  </p>
 </body>
 </html>
