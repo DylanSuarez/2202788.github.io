@@ -5,12 +5,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/dectective.ico" type="image/x-icon">
-  <title>Parent Float - Problem</title>
+  <title></title>
   <style>
-
+    body {
+      width: 752px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #665544;
+    }
+    div {
+      border: 1px solid #665544;
+    }
+    p {
+      width: 230px;
+      float: left;
+      margin: 10px;
+    }
+    p.example {
+      position: relative;
+      top: 40px;
+      left: 100px;
+    }
+    .clear {
+      clear: both;
+    }
+    span {
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-  
+  <h1>Parent Float - Problenc</h1>
+  <h2>Tipos de Bicicletas(3):</h2>
+  <div>
+    <p><span>MHonociclo:</span> Posee una rueda, no tiene cabrilla, ni frenos, pero sí tiene
+    pedales.</p>
+    <p><span>Cuatriciclo:</span> Se trata de bicicletas con cuatro ruedas, doble asiento, doble
+    manillar y doble pedal</p>
+    <p><span>La bicicleta renolque:</span> Posee un remolque portaniños.</p>
+    <p class="clear"><span>Bicicletas Alternativas:</span> Son hechas de Bambu.</p>
+    <p><span>La bicicleta panadera: </span> Es muy utilitaria y se usa cono vehículo de carga
+    pesada y de transporte.</p>
+    <p><span>Bicicleta de alta gana:</span> son bicicletas deportivas y de lujo, son muy
+    costosas.</p>
+
+    <p class="example">1. Si un elemento contenedor solo contiene elementos
+    flotantes, algunos navegadores lo tratarán como si tuviera cero páxeles
+    de alto. Coro puede ver en este ejemplo, el borde de un píxel asignado al
+    elemento contenedor se ha contraído, por lo que el cuadro se ve como una
+    línea de dos píxeles.</p>
+  </div>
 </body>
 </html>
