@@ -5,12 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/dectective.ico" type="image/x-icon">
-  <title>Actividad Personalizada 12</title>
+  <title>Aligning Form Controls - Problem</title>
   <style>
-
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
   </style>
 </head>
 <body>
-  
+  <form action="../index.html">
+    <div>
+      <label for="name" class="title">Name: </label>
+      <input type="text" name="name" id="name">
+    </div>
+    <div>
+      <label for="name" class="title">Email: </label>
+      <input type="email" name="email" id="email">
+    </div>
+    <div class="radio-buttons">
+      <span class="title">Gender: </span>
+      <input type="radio" name="gender" id="male" value="M">
+      <label for="male">M</label>
+      <input type="radio" name="gender" id="female" value="F">
+      <label for="female">F</label>
+    </div>
+    <div class="submit">
+      <input type="submit" id="submit" value="Regiter">
+    </div>
+  </form>
+
+  <p>
+    Las etiquetas de los elementos de formularios suelen ser logitudes diferentes, lo que significa que los controles que los de formulario del formulario no apareceran en linea recta.
+  </p>
 </body>
 </html>
