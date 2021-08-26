@@ -7,10 +7,162 @@
   <link rel="shortcut icon" href="./images/dectective.ico" type="image/x-icon">
   <title>Actividad Personalizada 13</title>
   <style>
+    html {
+      font-family: sans-serif;
+      box-sizing: border-box;
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+    *,
+    *::after,
+    *::before {
+      box-sizing: inherit;
+    }
+    body {
+      min-width: 100%;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    
+    .viewport {
+      width: 100%;
+      height: 100vh;
+      background-color: salmon;
+      position: relative;
+    }
+    .viewport:nth-child(2) {
+      background-color: turquoise;
+      display: flex;
+    }
+    .box {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      font-weight: bold;
+      font-size: 1.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: inset 1px 1px 8px #000, inset -1px -1px 8px #000;
+    }
 
+
+    /*********** top ***********/
+    .top-left {
+      left: 0;
+      background-color: mediumseagreen;
+    }
+    .top-middle {
+      left: calc((100% - 200px) / 2);
+      background-color: mediumvioletred;
+    }
+    .top-rgiht { 
+      right: 0;
+      background-color: purple;
+    }
+
+    /*********** middle ***********/
+    .middle-left {
+      top: calc((100% - 200px) / 2);
+      background-color: gold;
+    }
+    .middle {
+      top: calc((100% - 200px) / 2);
+      left: calc((100% - 200px) / 2);
+      background-color: lightcyan;
+    }
+    .middle-right {
+      right: 0;
+      top: calc((100% - 200px) / 2);
+      background-color: lightpink;
+    }
+
+    /*********** buttom ***********/
+    .bottom-left {
+      bottom: 0;
+      left: 0;
+      background-color: slateblue;
+    }
+    .bottom-middle {
+      bottom: 0;
+      left: calc((100% - 200px) / 2);
+      background-color: violet;
+    }
+    .bottom-right {
+      bottom: 0;
+      right: 0;
+      background-color: deepskyblue;
+    }
+
+
+    /*********** z-index ***********/
+    
+    .z-index {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .arriba,
+    .abajo {
+      width: 200px;
+      height: 200px;
+      font-size: 1.6rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .arriba {
+      background-color: orange;
+      z-index: 1;
+    }
+    .abajo {
+      background-color: orangered;
+      animation: zIndex 1s ease-in-out infinite alternate;
+    }
+    .z-index0 {
+      z-index: 0;
+    }
+    .z-index1 {
+      z-index: 1;
+    }
+    @keyframes zIndex {
+      to {
+        transform: translateY(0);
+      }
+      from {
+        transform: translateY(-80%);
+      }
+    }
   </style>
 </head>
 <body>
-  
+  <section class="viewport">
+    <div class="box top-left">top left</div>
+    <div class="box top-middle">top middle</div>
+    <div class="box top-rgiht">top right</div>
+
+    <div class="box middle-left">left middle</div>
+    <div class="box middle">middle</div>
+    <div class="box middle-right">right middle</div>
+
+    <div class="box bottom-left">left bottom</div>
+    <div class="box bottom-middle">middle bottom</div>
+    <div class="box bottom-right">right bottom</div>
+  </section>
+
+  <section class="viewport">
+    <div class="z-index">
+      <div class="z-index1 arriba">z-index 1</div>
+      <div class="z-index0 abajo">z-index 0</div>
+    </div>
+
+    <div class="z-index">
+      <div class="z-index0 arriba">z-index 0</div>
+      <div class="z-index1 abajo">z-index 1</div>
+    </div>
+  </section>
 </body>
 </html>
