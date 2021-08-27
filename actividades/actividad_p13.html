@@ -26,13 +26,15 @@
     
     .viewport {
       width: 100%;
-      height: 100vh;
+      height: calc(100vh - 2rem);
       background-color: salmon;
       position: relative;
+      margin-top: 2rem;
     }
     .viewport:nth-child(2) {
       background-color: turquoise;
       display: flex;
+      margin: 0;
     }
     .box {
       position: absolute;
@@ -128,6 +130,20 @@
     .z-index1 {
       z-index: 1;
     }
+    .fixed {
+      width: 100%;
+      height: 2rem;
+      z-index: 999;
+      font-weight: bold;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: mediumturquoise;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     @keyframes zIndex {
       to {
         transform: translateY(0);
@@ -139,30 +155,31 @@
   </style>
 </head>
 <body>
-  <section class="viewport">
+  <section class="vfixed viewport">
     <div class="box top-left">top left</div>
     <div class="box top-middle">top middle</div>
     <div class="box top-rgiht">top right</div>
-
+    
     <div class="box middle-left">left middle</div>
     <div class="box middle">middle</div>
     <div class="box middle-right">right middle</div>
-
+    
     <div class="box bottom-left">left bottom</div>
     <div class="box bottom-middle">middle bottom</div>
     <div class="box bottom-right">right bottom</div>
   </section>
-
+  
   <section class="viewport">
     <div class="z-index">
       <div class="z-index1 arriba">z-index 1</div>
       <div class="z-index0 abajo">z-index 0</div>
     </div>
-
+    
     <div class="z-index">
       <div class="z-index0 arriba">z-index 0</div>
       <div class="z-index1 abajo">z-index 1</div>
     </div>
   </section>
+  <div class="fixed">Fixed</div>
 </body>
 </html>
