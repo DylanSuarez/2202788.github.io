@@ -7,10 +7,167 @@
   <link rel="shortcut icon" href="./images/dectective.ico" type="image/x-icon">
   <title>Actividad Personalizada 12</title>
   <style>
+    html {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+    *,
+    *::after,
+    *::before {
+      box-sizing: inherit;
+    }
+    body {
+      margin: 0;
+      width: 100%;
+      overflow-x: hidden;
+    }
+    table {
+      border-collapse: collapse;
+    }
 
+
+    .titulo a {
+      text-decoration: none;
+      color: coral;
+    }
+    .lenguajes {
+      font-size: 18px;
+      list-style: upper-roman;
+    }
+    .lenguajes li {
+      margin-bottom: 16px;
+    }
+    .lenguajes h2 {
+      text-transform: uppercase;
+      text-shadow: 2px 2px 8px #ccc;
+    }
+    .js {
+      color: #f7e018;
+    }
+    .python {
+      color: #3674a9;
+    }
+    .java {
+      color: #e61f24;
+    }
+    .go {
+      color: #67d0dd;
+    }
+    .cplus {
+      color: #005697;
+    }
+    .ruby {
+      color: #910e04;
+    }
+    .typeS {
+      color: #0176c5;
+    }
+    .php {
+      color: #838dba;
+    }
+    .cshart { 
+      color: #964d91;
+    }
+    .c {
+      color: #a9bacd;
+    }
+    .table {
+      width: 1200px;
+    }
+    .table caption {
+      border: solid 1px coral;
+      text-align: left;
+      font-size: 22px;
+    }
+    .table th,
+    .table td{
+      border: crimson 1px solid;
+      padding: 8px;
+    }
   </style>
 </head>
 <body>
-  
+
+  <h1 class="titulo"><a href="https://blog.acamica.com/desarrollo-web-los-10-lenguajes-de-programacion-mas-populares/">Los 10 lenguajes de programación más usados</a></h1>
+  <p>
+    A partir de las estadísticas que provee <a href="https://madnight.github.io/githut/#/pull_requests/2020/1" target="_blank">GitHub</a>, realizamos un ranking de los lenguajes de programación más utilizados en la actualidad. GitHub es el host de código más grande del mundo, con 20 millones de usuarios y más de 57 millones de repositorios. Al analizar qué lenguajes se utilizan en GitHub, podemos ver cuáles son los que más utilizan los desarrolladores de todo el  mundo.
+  </p>
+
+  <ol class="lenguajes">
+    <li>
+      <h2 class="js">JavaScript</h2>
+      <p>JavaScript no es lo mismo que Java. Este lenguaje es utilizado para crear programas que pueden ser acoplados a una página web, o dentro de programas más grandes. También sirve para crear efectos y acciones interactivas con los usuarios.</p>
+    </li>
+    <li>
+      <h2 class="python">Python</h2>
+      <p>Es un lenguaje de programación multiplataforma y multiparadigma, y también es de propósito general. Es muy utilizado en los niveles principiantes debido a su simpleza, legibilidad y similitud con el inglés.</p>
+    </li>
+    <li>
+      <h2 class="java">Java</h2>
+      <p>Este es reconocido por su legibilidad y simplicidad. Es uno de los lenguajes de programación más adoptados: más de nueve millones de desarrolladores lo usan actualmente y puede encontrarse en siete mil millones de dispositivos alrededor del mundo. Ocupa las primeras posiciones del ranking desde 2001.
+      </p>
+    </li>
+    <li>
+      <h2 class="go">Go</h2>
+      <p>Es un lenguaje de programación desarrollado por Google en 2009 que también se caracteriza por su simplicidad. Se diferencia de la complejidad de C por su sintaxis clara, limpia y organizada.
+      </p>
+    </li>
+    <li>
+      <h2 class="cplus">C++</h2>  
+      <p>Es conocido como "C Plus Plus" y se orienta a objetos. Es una continuación y mejora del C. Los paquetes de Adobe, por ejemplo, se encuentran en este lenguaje.
+      </p>
+    </li>
+    <li>
+      <h2 class="ruby">Ruby</h2>
+      <p>Es un lenguaje de programación dinámico y de código abierto, enfocado en la productividad. Prioriza primero la comprensión de los humanos y después la de las máquinas.
+      </p>
+    </li>
+    <li>
+      <h2 class="typeS">TypeScript</h2>
+      <p>Es un lenguaje de programación de código abierto desarrollado por Microsoft, que cuenta con herramientas de programación orientada a objetos, utilizado mayormente para proyectos grandes.
+      </p>
+    </li>
+    <li>
+      <h2 class="php">PHP</h2>
+      <p>Fue creado con la intención de tener un conjunto de herramientas para el mantenimiento de páginas web, y no como lenguaje. También se caracteriza por su simpleza y ofrece grandes herramientas complejas.
+      </p>
+    </li>
+    <li>
+      <h2 class="cshart">C#</h2>
+      pTambién llamado "C Sharp", se encuentra orientado a objetos y fue desarrollado por Microsoft en el año 2000. Es una evolución del C y C++ que se destaca por su sencillez y modernidad.
+      </li>
+    <li>
+      <h2 class="c">C</h2>
+      <p>Se ejecuta en la mayoría de los sistemas operativos debido a su gran flexibilidad. Su popularidad se debe a la gran utilización que tiene para el desarrollo de aplicaciones de escritorio.
+      </p>
+    </li>
+  </ul>
+
+  <table class="table">
+    <caption>A continuación, otros tres  lenguajes de programación que, si bien no entraron en el top 10, han crecido mucho en popularidad en el último tiempo y hay que tener en cuenta:</caption>
+
+    <thead>
+      <tr>
+        <th>Kotlin</th>
+        <th>Swift</th>
+        <th>Dart</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>
+          Es un lenguaje de programación reconocido por Google para el desarrollo de aplicaciones Android. Se ejecuta en la Java Virtual Machine, lo que permite que sea 100% interoperable con Java. Podemos usar Kotlin en servidor, en web, en iOS, etc.
+        </td>
+        <td>
+          Swift es el nuevo lenguaje de programación de Apple. Este lenguaje se creó para la programación de sistemas, aplicaciones para móviles y de escritorio, llegando a servicios en la nube. Se distingue por características que hacen más fluida y fácil la lectura y escritura de código.
+        </td>
+        <td>
+          El constante desarrollo de nuevas tecnologías y el veloz avance de las telecomunicaciones influyen profundamente en nuestra forma de vivir y consumir. Hoy en día, es imposible imaginarnos sin un celular o redes sociales que nos conectan con el mundo, una plataforma de e-commerce para comprar y otras tantas  herramientas digitales que incorporamos a nuestras vidas y utilizamos en el día a día. En este contexto, convertirse en web developer, es una gran oportunidad para crecer a nivel personal, económico y profesional.
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>
